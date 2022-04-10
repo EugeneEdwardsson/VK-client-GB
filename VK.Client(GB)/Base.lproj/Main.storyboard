@@ -16,11 +16,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Q7-Uw-6YT">
-                                <rect key="frame" x="77" y="25" width="250" height="550"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Q7-Uw-6YT">
+                                <rect key="frame" x="0.0" y="26" width="415" height="550"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7XM-uk-2FV">
-                                        <rect key="frame" x="39" y="224" width="173" height="152"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="VK.Client" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGz-Ii-a7q">
+                                        <rect key="frame" x="157" y="166" width="100" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="ov7-4E-gGN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.3613992929" green="0.50240749119999994" blue="0.70592862369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qui-kv-517">
+                                        <rect key="frame" x="137" y="439" width="140" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="ENTER">
+                                            <color key="baseBackgroundColor" red="0.3613992929" green="0.50240749119999994" blue="0.70592862369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="vk-1" translatesAutoresizingMaskIntoConstraints="NO" id="HwZ-mx-N0M">
+                                        <rect key="frame" x="15" y="15" width="384" height="125"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7XM-uk-2FV">
+                                        <rect key="frame" x="121" y="243" width="173" height="152"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nhU-P3-L3r">
                                                 <rect key="frame" x="0.0" y="0.0" width="173" height="72"/>
@@ -68,28 +88,21 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="vk-1" translatesAutoresizingMaskIntoConstraints="NO" id="HwZ-mx-N0M">
-                                        <rect key="frame" x="15" y="19" width="220" height="100"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VK.Client" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGz-Ii-a7q">
-                                        <rect key="frame" x="75" y="133" width="100" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <color key="textColor" red="0.3613992929" green="0.50240749119999994" blue="0.70592862369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                        <size key="shadowOffset" width="0.0" height="0.0"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qui-kv-517">
-                                        <rect key="frame" x="55" y="416" width="140" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="ENTER">
-                                            <color key="baseBackgroundColor" red="0.3613992929" green="0.50240749119999994" blue="0.70592862369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
-                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="HwZ-mx-N0M" firstAttribute="centerX" secondItem="1Q7-Uw-6YT" secondAttribute="centerX" id="yqS-Qf-dwC"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qui-kv-517" secondAttribute="bottom" constant="79" id="4Oi-bo-POw"/>
+                                    <constraint firstItem="Qui-kv-517" firstAttribute="top" secondItem="7XM-uk-2FV" secondAttribute="bottom" constant="44" id="7q2-tW-z6M"/>
+                                    <constraint firstItem="HwZ-mx-N0M" firstAttribute="top" secondItem="snc-XM-a4q" secondAttribute="top" constant="15" id="GeG-qr-kFX"/>
+                                    <constraint firstItem="7XM-uk-2FV" firstAttribute="top" secondItem="xGz-Ii-a7q" secondAttribute="bottom" constant="17" id="GoD-fC-l4E"/>
+                                    <constraint firstItem="HwZ-mx-N0M" firstAttribute="centerX" secondItem="1Q7-Uw-6YT" secondAttribute="centerX" id="KbS-Z4-ehv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qui-kv-517" secondAttribute="trailing" constant="138" id="QlL-QA-qbs"/>
+                                    <constraint firstItem="Jh8-lZ-x4A" firstAttribute="centerX" secondItem="1Q7-Uw-6YT" secondAttribute="centerX" id="SP6-bc-ru8"/>
+                                    <constraint firstItem="snc-XM-a4q" firstAttribute="trailing" secondItem="HwZ-mx-N0M" secondAttribute="trailing" constant="15" id="TlE-wn-OVb"/>
+                                    <constraint firstItem="7XM-uk-2FV" firstAttribute="centerX" secondItem="1Q7-Uw-6YT" secondAttribute="centerX" id="kF9-nP-5zM"/>
+                                    <constraint firstItem="HwZ-mx-N0M" firstAttribute="leading" secondItem="snc-XM-a4q" secondAttribute="leading" constant="15" id="sOR-He-NVT"/>
+                                    <constraint firstItem="xGz-Ii-a7q" firstAttribute="centerX" secondItem="1Q7-Uw-6YT" secondAttribute="centerX" id="skw-AN-b0T"/>
+                                    <constraint firstItem="Qui-kv-517" firstAttribute="leading" secondItem="1Q7-Uw-6YT" secondAttribute="leading" constant="137" id="tb7-yK-v5S"/>
+                                    <constraint firstItem="xGz-Ii-a7q" firstAttribute="top" secondItem="HwZ-mx-N0M" secondAttribute="bottom" constant="26" id="xoa-gf-Sn7"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="snc-XM-a4q"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="er2-kQ-VSt"/>
@@ -98,11 +111,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="1Q7-Uw-6YT" secondAttribute="trailing" id="2no-X6-v2u"/>
-                            <constraint firstAttribute="bottom" secondItem="1Q7-Uw-6YT" secondAttribute="bottom" id="9Ae-wU-7oD"/>
-                            <constraint firstItem="1Q7-Uw-6YT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ohv-4G-HxQ"/>
-                            <constraint firstItem="1Q7-Uw-6YT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Zko-hv-tG5"/>
-                            <constraint firstItem="1Q7-Uw-6YT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fDB-yf-oVw"/>
+                            <constraint firstAttribute="bottom" secondItem="1Q7-Uw-6YT" secondAttribute="bottom" id="SOK-Gk-MI9"/>
+                            <constraint firstItem="1Q7-Uw-6YT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="V9q-x3-ujm"/>
+                            <constraint firstItem="1Q7-Uw-6YT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bzb-M6-fFb"/>
+                            <constraint firstAttribute="trailing" secondItem="1Q7-Uw-6YT" secondAttribute="trailing" id="kAs-7J-6NG"/>
+                            <constraint firstItem="1Q7-Uw-6YT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ll6-Sl-5Y8"/>
                         </constraints>
                     </view>
                 </viewController>
