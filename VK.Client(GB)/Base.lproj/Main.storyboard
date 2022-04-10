@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Q7-Uw-6YT">
-                                <rect key="frame" x="77" y="24" width="260" height="660"/>
+                                <rect key="frame" x="77" y="25" width="250" height="550"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7XM-uk-2FV">
-                                        <rect key="frame" x="44" y="309" width="173" height="152"/>
+                                        <rect key="frame" x="39" y="224" width="173" height="152"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nhU-P3-L3r">
                                                 <rect key="frame" x="0.0" y="0.0" width="173" height="72"/>
@@ -69,17 +69,18 @@
                                         </subviews>
                                     </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="vk-1" translatesAutoresizingMaskIntoConstraints="NO" id="HwZ-mx-N0M">
-                                        <rect key="frame" x="40" y="28" width="180" height="180"/>
+                                        <rect key="frame" x="15" y="19" width="220" height="100"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VK.Client" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGz-Ii-a7q">
-                                        <rect key="frame" x="55" y="231" width="150" height="45"/>
+                                        <rect key="frame" x="75" y="133" width="100" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" red="0.3613992929" green="0.50240749119999994" blue="0.70592862369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qui-kv-517">
-                                        <rect key="frame" x="60" y="513" width="140" height="35"/>
+                                        <rect key="frame" x="55" y="416" width="140" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="ENTER">
@@ -88,7 +89,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="HwZ-mx-N0M" firstAttribute="centerX" secondItem="1Q7-Uw-6YT" secondAttribute="centerX" id="ggb-OS-YoM"/>
+                                    <constraint firstItem="HwZ-mx-N0M" firstAttribute="centerX" secondItem="1Q7-Uw-6YT" secondAttribute="centerX" id="yqS-Qf-dwC"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="snc-XM-a4q"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="er2-kQ-VSt"/>
@@ -97,11 +98,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="1Q7-Uw-6YT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3vC-PP-ky7"/>
-                            <constraint firstAttribute="bottom" secondItem="1Q7-Uw-6YT" secondAttribute="bottom" id="9C2-yv-G0Q"/>
-                            <constraint firstItem="1Q7-Uw-6YT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CZv-VK-Qkn"/>
-                            <constraint firstAttribute="trailing" secondItem="1Q7-Uw-6YT" secondAttribute="trailing" id="EEP-zI-RYr"/>
-                            <constraint firstItem="1Q7-Uw-6YT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jGe-9c-EmQ"/>
+                            <constraint firstAttribute="trailing" secondItem="1Q7-Uw-6YT" secondAttribute="trailing" id="2no-X6-v2u"/>
+                            <constraint firstAttribute="bottom" secondItem="1Q7-Uw-6YT" secondAttribute="bottom" id="9Ae-wU-7oD"/>
+                            <constraint firstItem="1Q7-Uw-6YT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ohv-4G-HxQ"/>
+                            <constraint firstItem="1Q7-Uw-6YT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Zko-hv-tG5"/>
+                            <constraint firstItem="1Q7-Uw-6YT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fDB-yf-oVw"/>
                         </constraints>
                     </view>
                 </viewController>
