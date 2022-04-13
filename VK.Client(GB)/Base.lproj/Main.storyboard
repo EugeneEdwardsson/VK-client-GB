@@ -16,10 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Q7-Uw-6YT">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Q7-Uw-6YT">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="550"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7XM-uk-2FV">
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7XM-uk-2FV">
                                         <rect key="frame" x="121" y="266" width="173" height="152"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nhU-P3-L3r">
@@ -68,7 +69,7 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="VK.Client" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGz-Ii-a7q">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="VK.Client" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGz-Ii-a7q">
                                         <rect key="frame" x="147" y="194" width="120" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="DF9-eS-EbH"/>
@@ -78,44 +79,25 @@
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qui-kv-517">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qui-kv-517">
                                         <rect key="frame" x="157" y="469" width="100" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="ENTER">
                                             <color key="baseBackgroundColor" red="0.3613992929" green="0.50240749119999994" blue="0.70592862369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="vk-1" translatesAutoresizingMaskIntoConstraints="NO" id="HwZ-mx-N0M">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vk-1" translatesAutoresizingMaskIntoConstraints="NO" id="HwZ-mx-N0M">
                                         <rect key="frame" x="147" y="48" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="7XM-uk-2FV" firstAttribute="centerX" secondItem="1Q7-Uw-6YT" secondAttribute="centerX" id="0og-DY-d8e"/>
-                                    <constraint firstItem="xGz-Ii-a7q" firstAttribute="top" secondItem="HwZ-mx-N0M" secondAttribute="bottom" constant="26" id="9PO-hp-S2k"/>
-                                    <constraint firstItem="Qui-kv-517" firstAttribute="leading" secondItem="1Q7-Uw-6YT" secondAttribute="leading" constant="157" id="ESS-1X-blq"/>
-                                    <constraint firstAttribute="bottom" secondItem="Qui-kv-517" secondAttribute="bottom" constant="52" id="PkB-jv-K0z"/>
-                                    <constraint firstItem="HwZ-mx-N0M" firstAttribute="centerX" secondItem="1Q7-Uw-6YT" secondAttribute="centerX" id="Ptd-ms-Umq"/>
-                                    <constraint firstItem="xGz-Ii-a7q" firstAttribute="centerX" secondItem="1Q7-Uw-6YT" secondAttribute="centerX" id="Qt5-Mw-X9p"/>
-                                    <constraint firstItem="HwZ-mx-N0M" firstAttribute="top" secondItem="snc-XM-a4q" secondAttribute="top" constant="40" id="aax-72-1Zj"/>
-                                    <constraint firstItem="Qui-kv-517" firstAttribute="top" secondItem="7XM-uk-2FV" secondAttribute="bottom" constant="51" id="hi6-RI-ooS"/>
-                                    <constraint firstItem="HwZ-mx-N0M" firstAttribute="leading" secondItem="snc-XM-a4q" secondAttribute="leading" constant="40" id="ht0-9d-3PM"/>
-                                    <constraint firstItem="7XM-uk-2FV" firstAttribute="top" secondItem="xGz-Ii-a7q" secondAttribute="bottom" constant="32" id="kCp-zA-Vbd"/>
-                                    <constraint firstItem="snc-XM-a4q" firstAttribute="trailing" secondItem="HwZ-mx-N0M" secondAttribute="trailing" constant="40" id="vy8-iB-R6x"/>
-                                    <constraint firstAttribute="trailing" secondItem="Qui-kv-517" secondAttribute="trailing" constant="157" id="wel-Iu-koy"/>
-                                </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="snc-XM-a4q"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="er2-kQ-VSt"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="1Q7-Uw-6YT" secondAttribute="trailing" id="KLm-af-Vv4"/>
-                            <constraint firstItem="1Q7-Uw-6YT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cX5-lH-0nx"/>
-                            <constraint firstAttribute="bottom" secondItem="1Q7-Uw-6YT" secondAttribute="bottom" id="jHk-GV-ybD"/>
-                            <constraint firstItem="1Q7-Uw-6YT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="szE-Ph-7F1"/>
-                            <constraint firstItem="1Q7-Uw-6YT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="twC-Ph-PP1"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
