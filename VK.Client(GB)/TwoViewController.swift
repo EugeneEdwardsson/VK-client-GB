@@ -9,6 +9,8 @@ import UIKit
 
 class TwoViewController: UIViewController {
 
+    @IBOutlet var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
