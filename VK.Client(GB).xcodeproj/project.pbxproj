@@ -14,6 +14,7 @@
 		4E22031C28009C0800DF0032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E22031B28009C0800DF0032 /* Assets.xcassets */; };
 		4E22031F28009C0800DF0032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E22031D28009C0800DF0032 /* LaunchScreen.storyboard */; };
 		4E2203272800A2A600DF0032 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2203262800A2A600DF0032 /* TwoViewController.swift */; };
+		4EF0A4C8280F2DD900FE35A5 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF0A4C7280F2DD900FE35A5 /* ThreeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4E22031E28009C0800DF0032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E22032028009C0800DF0032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E2203262800A2A600DF0032 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		4EF0A4C7280F2DD900FE35A5 /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				4E22031628009C0700DF0032 /* ViewController.swift */,
 				4E22031828009C0700DF0032 /* Main.storyboard */,
 				4E2203262800A2A600DF0032 /* TwoViewController.swift */,
+				4EF0A4C7280F2DD900FE35A5 /* ThreeViewController.swift */,
 				4E22031B28009C0800DF0032 /* Assets.xcassets */,
 				4E22031D28009C0800DF0032 /* LaunchScreen.storyboard */,
 				4E22032028009C0800DF0032 /* Info.plist */,
@@ -145,6 +148,7 @@
 				4E22031328009C0700DF0032 /* AppDelegate.swift in Sources */,
 				4E22031528009C0700DF0032 /* SceneDelegate.swift in Sources */,
 				4E2203272800A2A600DF0032 /* TwoViewController.swift in Sources */,
+				4EF0A4C8280F2DD900FE35A5 /* ThreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

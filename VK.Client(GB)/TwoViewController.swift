@@ -31,6 +31,8 @@ class TwoViewController: UIViewController {
         
         
         NotificationCenter.default.addObserver(self, selector: #selector(willHideKeyboard(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        
     }
     
     
