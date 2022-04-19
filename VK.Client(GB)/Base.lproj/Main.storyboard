@@ -185,9 +185,9 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jKZ-y3-PBp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3644.9275362318845" y="503.57142857142856"/>
+            <point key="canvasLocation" x="4319" y="-297"/>
         </scene>
-        <!--Item 1-->
+        <!--Profile-->
         <scene sceneID="CW0-kg-lhJ">
             <objects>
                 <viewController id="AED-B9-z0c" sceneMemberID="viewController">
@@ -197,7 +197,7 @@
                         <viewLayoutGuide key="safeArea" id="5Gp-S7-HTT"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="3w8-rv-rZz"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="house.fill" catalog="system" selectedImage="house" id="3w8-rv-rZz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fga-7a-4JA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -229,7 +229,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ail-XB-DE5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3528.985507246377" y="-318.08035714285711"/>
+            <point key="canvasLocation" x="3371" y="-297"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="7fa-Lg-Qr1">
@@ -257,7 +257,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iPd-e3-vRn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4328.985507246377" y="-297.32142857142856"/>
+            <point key="canvasLocation" x="3370" y="516"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="uvD-jH-Zko">
@@ -285,7 +285,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vky-sc-h1P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5157.971014492754" y="-291.29464285714283"/>
+            <point key="canvasLocation" x="4319" y="516"/>
         </scene>
         <!--Three View Controller-->
         <scene sceneID="Upg-km-wvL">
@@ -326,6 +326,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="vk-1" width="2500" height="2500"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
