@@ -148,6 +148,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="QOR-1j-ZWj"/>
+                    <connections>
+                        <segue destination="xjc-zD-qut" kind="show" id="b2p-ca-AmH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xyw-w0-xvb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,6 +185,9 @@
                             <outlet property="delegate" destination="RwX-WH-H0m" id="uaj-ku-mI1"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" id="Hkf-Nw-apo">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="rHi-kw-aIL"/>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jKZ-y3-PBp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -198,6 +204,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="house.fill" catalog="system" selectedImage="house" id="3w8-rv-rZz"/>
+                    <connections>
+                        <segue destination="1Qp-5a-vdU" kind="show" id="iv8-Zn-pmE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fga-7a-4JA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -226,6 +235,12 @@
                             <outlet property="delegate" destination="1Qp-5a-vdU" id="syq-zB-gWp"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="Eec-ND-MJj">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="KVe-Ma-Lp9"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="RwX-WH-H0m" kind="show" id="ikS-xE-PBF"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ail-XB-DE5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -254,6 +269,12 @@
                             <outlet property="delegate" destination="xjc-zD-qut" id="WrA-gs-3EH"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="xR3-m7-md4">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="0q0-qE-f0g"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="fmu-Kf-4HH" kind="show" id="Ppb-9U-9ZO"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iPd-e3-vRn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -282,6 +303,9 @@
                             <outlet property="delegate" destination="fmu-Kf-4HH" id="1wk-DN-dk6"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="NvI-48-UY1">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="F69-Fm-otY"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vky-sc-h1P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
