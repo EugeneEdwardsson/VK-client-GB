@@ -11,6 +11,13 @@ class TwoViewController: UIViewController {
 
     @IBOutlet var scrollView: UIScrollView!
     
+    
+    @IBOutlet var loginTextField: UITextField!
+    
+    
+    @IBOutlet var passwordTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -49,5 +56,16 @@ class TwoViewController: UIViewController {
         print("HideKeyboard - \(#function)")
     }
     
+    @IBAction func tapButton(_ sender: Any) {
+        
+        
+        guard let login = loginTextField.text,
+              let password = passwordTextField.text,
+              login == "",
+        password == "" else {showError(message: "Error password")
+            return}
+        
+        performSegue(withIdentifier: "login", sender: nil)
+    }
     
 }
