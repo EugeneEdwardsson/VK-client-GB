@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SSz-0M-dpa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -343,6 +343,24 @@
             </objects>
             <point key="canvasLocation" x="1244.9275362318842" y="99.776785714285708"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gsW-sA-iFP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SSz-0M-dpa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L3i-ik-DPc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YKP-zD-KKL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6XU-CT-wxM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-455.07246376811599" y="99.776785714285708"/>
+        </scene>
         <!--Profile-->
         <scene sceneID="zfn-HU-FSa">
             <objects>
@@ -369,7 +387,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aCG-Zd-KIX" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Groups" image="person.2.fill" catalog="system" selectedImage="person.2" id="QOR-1j-ZWj"/>
                     <toolbarItems/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z2r-D0-JLM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
