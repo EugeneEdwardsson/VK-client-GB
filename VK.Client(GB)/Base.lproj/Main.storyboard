@@ -133,6 +133,7 @@
                         <outlet property="ScrollView" destination="1Q7-Uw-6YT" id="JwI-LU-AnY"/>
                         <outlet property="loginTextField" destination="QXa-HH-4zA" id="pbH-Az-Wtx"/>
                         <outlet property="passwordTextField" destination="cUz-wx-Umh" id="OQ7-u1-ykk"/>
+                        <outlet property="scrollView" destination="1Q7-Uw-6YT" id="JdC-j7-Lan"/>
                         <segue destination="hxP-f5-Cj9" kind="show" identifier="login" id="xKE-BD-twu"/>
                     </connections>
                 </viewController>
@@ -145,7 +146,7 @@
             <objects>
                 <viewController id="QgP-di-6bg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LSS-zC-NFh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="FBL-Cg-Xeo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -171,19 +172,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="k5W-PO-1pX">
-                            <size key="itemSize" width="128" height="128"/>
+                            <size key="itemSize" width="414" height="70"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="r3P-4Z-XSK">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GvO-Xu-gg8">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </collectionViewCellContentView>
+                                <size key="customSize" width="414" height="70"/>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -239,6 +241,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="RwX-WH-H0m" kind="show" id="7KD-1Z-Ie2"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -246,13 +251,7 @@
                             <outlet property="delegate" destination="1Qp-5a-vdU" id="syq-zB-gWp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Eec-ND-MJj">
-                        <barButtonItem key="rightBarButtonItem" systemItem="undo" id="KVe-Ma-Lp9">
-                            <connections>
-                                <segue destination="RwX-WH-H0m" kind="show" id="R15-iH-pBW"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="Eec-ND-MJj"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ail-XB-DE5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -263,7 +262,7 @@
             <objects>
                 <tableViewController id="xjc-zD-qut" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="qJo-Ca-kTf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -298,7 +297,7 @@
             <objects>
                 <tableViewController id="fmu-Kf-4HH" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="FOo-En-AP2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -369,8 +368,9 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aCG-Zd-KIX" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Groups" image="person.2.fill" catalog="system" selectedImage="person.2" id="QOR-1j-ZWj"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z2r-D0-JLM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
