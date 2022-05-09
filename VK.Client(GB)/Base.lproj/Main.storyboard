@@ -152,7 +152,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="c0J-zE-2A9">
-                        <barButtonItem key="rightBarButtonItem" systemItem="undo" id="F9h-AZ-A2F">
+                        <barButtonItem key="rightBarButtonItem" image="arrow.forward" catalog="system" id="F9h-AZ-A2F">
                             <connections>
                                 <segue destination="xjc-zD-qut" kind="show" id="WAH-8a-fje"/>
                             </connections>
@@ -194,7 +194,7 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="Hkf-Nw-apo">
-                        <barButtonItem key="rightBarButtonItem" systemItem="undo" id="rHi-kw-aIL"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="rHi-kw-aIL"/>
                     </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jKZ-y3-PBp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -213,7 +213,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="34Z-2G-adU">
-                        <barButtonItem key="rightBarButtonItem" systemItem="undo" id="8fH-dI-dTt">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="arrow.forward" catalog="system" id="8fH-dI-dTt">
                             <connections>
                                 <segue destination="1Qp-5a-vdU" kind="show" id="iNZ-Ad-F5C"/>
                             </connections>
@@ -281,7 +281,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="xR3-m7-md4">
-                        <barButtonItem key="rightBarButtonItem" systemItem="undo" id="0q0-qE-f0g">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="arrow.forward" catalog="system" id="0q0-qE-f0g">
                             <connections>
                                 <segue destination="fmu-Kf-4HH" kind="show" id="kqA-0y-Cg4"/>
                             </connections>
@@ -316,7 +316,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="NvI-48-UY1">
-                        <barButtonItem key="rightBarButtonItem" systemItem="undo" id="F69-Fm-otY"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="F69-Fm-otY"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vky-sc-h1P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -384,6 +384,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.forward" catalog="system" width="128" height="98"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person.2" catalog="system" width="128" height="81"/>
