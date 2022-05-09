@@ -152,6 +152,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="c0J-zE-2A9">
+                        <barButtonItem key="leftBarButtonItem" image="lock.fill" catalog="system" id="l9l-4N-YIb">
+                            <connections>
+                                <segue destination="eC6-pK-sJt" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="g7H-EQ-MoC"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="arrow.forward" catalog="system" id="F9h-AZ-A2F">
                             <connections>
                                 <segue destination="xjc-zD-qut" kind="show" id="WAH-8a-fje"/>
@@ -160,6 +165,7 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xyw-w0-xvb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="eC6-pK-sJt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3257.971014492754" y="515.625"/>
         </scene>
@@ -229,27 +235,34 @@
             </objects>
             <point key="canvasLocation" x="3257.971014492754" y="-297.32142857142856"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Table View Controller Friends-->
         <scene sceneID="eVP-gH-RkV">
             <objects>
-                <tableViewController id="1Qp-5a-vdU" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="JRw-bU-SiJ">
+                <tableViewController id="1Qp-5a-vdU" customClass="TableViewControllerFriends" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="JRw-bU-SiJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nNf-aI-3BN">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nNf-aI-3BN" id="6OK-yX-Vgj">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="RwX-WH-H0m" kind="show" id="7KD-1Z-Ie2"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
+                        <sections>
+                            <tableViewSection id="ozo-Ih-au1">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nNf-aI-3BN">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nNf-aI-3BN" id="6OK-yX-Vgj">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="tintColor" systemColor="linkColor"/>
+                                        </tableViewCellContentView>
+                                        <color key="tintColor" systemColor="linkColor"/>
+                                        <connections>
+                                            <segue destination="RwX-WH-H0m" kind="show" id="7KD-1Z-Ie2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
                         <connections>
                             <outlet property="dataSource" destination="1Qp-5a-vdU" id="Upp-cG-8Ok"/>
                             <outlet property="delegate" destination="1Qp-5a-vdU" id="syq-zB-gWp"/>
@@ -351,11 +364,11 @@
             </objects>
             <point key="canvasLocation" x="1244.9275362318842" y="99.776785714285708"/>
         </scene>
-        <!--Profile-->
+        <!--Friends-->
         <scene sceneID="zfn-HU-FSa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="16y-0m-Xon" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="house.fill" catalog="system" selectedImage="house" id="2wY-RL-PoT"/>
+                    <tabBarItem key="tabBarItem" title="Friends" image="person.fill" catalog="system" selectedImage="person" id="2wY-RL-PoT"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="J7d-Vd-lSL">
@@ -394,12 +407,15 @@
     </scenes>
     <resources>
         <image name="arrow.forward" catalog="system" width="128" height="98"/>
-        <image name="house" catalog="system" width="128" height="106"/>
-        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="lock.fill" catalog="system" width="128" height="128"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.2" catalog="system" width="128" height="81"/>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="vk-1" width="2500" height="2500"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
