@@ -193,9 +193,7 @@
                             <outlet property="delegate" destination="RwX-WH-H0m" id="uaj-ku-mI1"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="Hkf-Nw-apo">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="rHi-kw-aIL"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="Hkf-Nw-apo"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jKZ-y3-PBp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -213,6 +211,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="34Z-2G-adU">
+                        <barButtonItem key="leftBarButtonItem" image="lock.fill" catalog="system" id="1zZ-7W-Fge">
+                            <connections>
+                                <segue destination="2Pe-CG-GvB" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="h6R-fW-juG"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="arrow.forward" catalog="system" id="8fH-dI-dTt">
                             <connections>
                                 <segue destination="1Qp-5a-vdU" kind="show" id="iNZ-Ad-F5C"/>
@@ -222,6 +225,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fga-7a-4JA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="2Pe-CG-GvB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3257.971014492754" y="-297.32142857142856"/>
         </scene>
@@ -316,10 +320,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="NvI-48-UY1">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="F69-Fm-otY"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="F69-Fm-otY">
+                            <connections>
+                                <segue destination="4tk-qM-IdL" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="usC-fw-IXP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vky-sc-h1P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="4tk-qM-IdL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5228.985507246377" y="515.625"/>
         </scene>
@@ -387,6 +396,7 @@
         <image name="arrow.forward" catalog="system" width="128" height="98"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="lock.fill" catalog="system" width="128" height="128"/>
         <image name="person.2" catalog="system" width="128" height="81"/>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="vk-1" width="2500" height="2500"/>
