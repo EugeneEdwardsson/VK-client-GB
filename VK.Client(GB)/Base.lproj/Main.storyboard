@@ -29,7 +29,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSD-OK-PIa">
                                                         <rect key="frame" x="56.5" y="0.0" width="60" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                        <color key="textColor" red="0.3613992929" green="0.50240749119999994" blue="0.70592862369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="textColor" red="0.41049297010000002" green="0.46663456850000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                                     </label>
@@ -51,7 +51,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFJ-ik-Ukp" userLabel="Password">
                                                         <rect key="frame" x="32" y="0.0" width="109.5" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                        <color key="textColor" red="0.3613992929" green="0.50240749119999994" blue="0.70592862369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="textColor" red="0.41049297010000002" green="0.46663456850000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                                     </label>
@@ -69,7 +69,7 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vk-1" translatesAutoresizingMaskIntoConstraints="NO" id="HwZ-mx-N0M">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VK-Icon.author_Ruslan_Babkin-1" translatesAutoresizingMaskIntoConstraints="NO" id="HwZ-mx-N0M">
                                         <rect key="frame" x="147" y="44" width="120" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="aLH-c7-FcB"/>
@@ -81,7 +81,7 @@
                                             <constraint firstAttribute="height" constant="40" id="mOI-iE-xAY"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <color key="textColor" red="0.3613992929" green="0.50240749119999994" blue="0.70592862369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" red="0.41049297010000002" green="0.46663456850000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
@@ -92,7 +92,7 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="ENTER">
-                                            <color key="baseBackgroundColor" red="0.3613992929" green="0.50240749119999994" blue="0.70592862369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseBackgroundColor" red="0.41049297010000002" green="0.46663456850000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Ya-fF-NTO"/>
@@ -363,6 +363,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.41049297010000002" green="0.46663456850000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="16y-0m-Xon" kind="relationship" relationship="viewControllers" id="eHZ-al-NfN"/>
@@ -415,13 +416,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="VK-Icon.author_Ruslan_Babkin-1" width="512" height="512"/>
         <image name="arrow.forward" catalog="system" width="128" height="98"/>
         <image name="lock.fill" catalog="system" width="128" height="128"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.2" catalog="system" width="128" height="81"/>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <image name="vk-1" width="2500" height="2500"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
