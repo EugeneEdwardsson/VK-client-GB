@@ -199,9 +199,16 @@
                             <outlet property="delegate" destination="RwX-WH-H0m" id="uaj-ku-mI1"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="Hkf-Nw-apo"/>
+                    <navigationItem key="navigationItem" id="Hkf-Nw-apo">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="u8V-1i-sMr">
+                            <connections>
+                                <segue destination="Sxj-yq-eY2" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="ZrH-7n-Bkx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jKZ-y3-PBp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Sxj-yq-eY2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5228.985507246377" y="-297.32142857142856"/>
         </scene>
