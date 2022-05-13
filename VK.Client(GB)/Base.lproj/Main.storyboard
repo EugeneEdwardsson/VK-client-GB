@@ -20,6 +20,10 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Q7-Uw-6YT">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QMJ-3i-Hj6">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="556"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7XM-uk-2FV">
                                         <rect key="frame" x="120.5" y="288" width="173" height="152"/>
                                         <subviews>
@@ -105,13 +109,19 @@
                                     <constraint firstItem="snc-XM-a4q" firstAttribute="bottom" secondItem="Qui-kv-517" secondAttribute="bottom" constant="40" id="EWn-Dk-fEi"/>
                                     <constraint firstItem="HwZ-mx-N0M" firstAttribute="top" secondItem="snc-XM-a4q" secondAttribute="top" constant="44" id="Env-C7-v2e"/>
                                     <constraint firstItem="HwZ-mx-N0M" firstAttribute="centerX" secondItem="1Q7-Uw-6YT" secondAttribute="centerX" id="Fac-xX-iNn"/>
+                                    <constraint firstItem="QMJ-3i-Hj6" firstAttribute="leading" secondItem="er2-kQ-VSt" secondAttribute="leading" id="FnM-ph-hCn"/>
                                     <constraint firstItem="snc-XM-a4q" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Qui-kv-517" secondAttribute="trailing" id="HdD-FH-1NM"/>
+                                    <constraint firstItem="er2-kQ-VSt" firstAttribute="trailing" secondItem="QMJ-3i-Hj6" secondAttribute="trailing" id="KJR-Kq-je7"/>
                                     <constraint firstItem="HwZ-mx-N0M" firstAttribute="leading" secondItem="snc-XM-a4q" secondAttribute="leading" constant="147" id="Ke8-zq-kek"/>
                                     <constraint firstItem="Qui-kv-517" firstAttribute="top" secondItem="7XM-uk-2FV" secondAttribute="bottom" constant="45" id="PtV-l1-aNK"/>
+                                    <constraint firstItem="QMJ-3i-Hj6" firstAttribute="leading" secondItem="snc-XM-a4q" secondAttribute="leading" id="ZcW-oH-Y0g"/>
                                     <constraint firstItem="Qui-kv-517" firstAttribute="centerX" secondItem="1Q7-Uw-6YT" secondAttribute="centerX" id="a2i-yI-PDi"/>
                                     <constraint firstItem="7XM-uk-2FV" firstAttribute="top" secondItem="xGz-Ii-a7q" secondAttribute="bottom" constant="48" id="aMm-z5-ukY"/>
+                                    <constraint firstItem="snc-XM-a4q" firstAttribute="trailing" secondItem="QMJ-3i-Hj6" secondAttribute="trailing" id="gPz-nM-1Hb"/>
+                                    <constraint firstItem="QMJ-3i-Hj6" firstAttribute="bottom" secondItem="snc-XM-a4q" secondAttribute="bottom" id="kIC-9O-Gln"/>
                                     <constraint firstItem="xGz-Ii-a7q" firstAttribute="top" secondItem="HwZ-mx-N0M" secondAttribute="bottom" constant="36" id="nen-9O-Czf"/>
                                     <constraint firstItem="snc-XM-a4q" firstAttribute="trailing" secondItem="HwZ-mx-N0M" secondAttribute="trailing" constant="147" id="tbn-2v-uLO"/>
+                                    <constraint firstItem="QMJ-3i-Hj6" firstAttribute="top" secondItem="snc-XM-a4q" secondAttribute="top" id="u93-pu-u3D"/>
                                     <constraint firstItem="xGz-Ii-a7q" firstAttribute="centerX" secondItem="1Q7-Uw-6YT" secondAttribute="centerX" id="zpQ-tq-i9s"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="snc-XM-a4q"/>
@@ -232,7 +242,7 @@
             </objects>
             <point key="canvasLocation" x="3313" y="-297"/>
         </scene>
-        <!--Table View Controller-->
+        <!--My groups-->
         <scene sceneID="7fa-Lg-Qr1">
             <objects>
                 <tableViewController modalPresentationStyle="fullScreen" id="xjc-zD-qut" sceneMemberID="viewController">
@@ -264,7 +274,7 @@
                             <outlet property="delegate" destination="xjc-zD-qut" id="WrA-gs-3EH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="xR3-m7-md4">
+                    <navigationItem key="navigationItem" title="My groups" id="xR3-m7-md4">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="arrow.forward" catalog="system" id="0q0-qE-f0g">
                             <connections>
                                 <segue destination="fmu-Kf-4HH" kind="show" id="kqA-0y-Cg4"/>
@@ -276,7 +286,7 @@
             </objects>
             <point key="canvasLocation" x="3312" y="516"/>
         </scene>
-        <!--Table View Controller-->
+        <!--All groups-->
         <scene sceneID="uvD-jH-Zko">
             <objects>
                 <tableViewController id="fmu-Kf-4HH" sceneMemberID="viewController">
@@ -308,7 +318,7 @@
                             <outlet property="delegate" destination="fmu-Kf-4HH" id="1wk-DN-dk6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="NvI-48-UY1">
+                    <navigationItem key="navigationItem" title="All groups" id="NvI-48-UY1">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="F69-Fm-otY">
                             <connections>
                                 <segue destination="4tk-qM-IdL" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="usC-fw-IXP"/>
