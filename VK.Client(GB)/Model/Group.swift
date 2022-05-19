@@ -8,8 +8,15 @@
 import UIKit
 
 
-struct Group {
+class Group {
     
-    var title = String()
-    var avatar = UIImage()
+    var avatar: UIImage?
+    var title: String
+    
+    init(avatarGroup: UIImage? = nil, titleGroup: String) {
+        
+        self.avatar = avatarGroup
+        self.title = titleGroup
+        
+    }
 }

@@ -11,11 +11,11 @@ class FriendsTableViewController: UITableViewController {
     
     
     
-   // var friends = ["Barak Obama","Ivan Baxter","Elizabeth Windzor","Ivan Ivanov","Alex Shevtsov","Steve Jobs"]
+   
     
     
     
-    
+    var friends = [Friend(nameFriend: "Barak Obama"), Friend(nameFriend: "Ivan Baxter"), Friend(nameFriend: "Elizabeth Windzor"), Friend(nameFriend: "Ivan Ivanov"), Friend(nameFriend: "Alex Shevtsov"), Friend(nameFriend: "Steve Jobs")]
     
 
     override func viewDidLoad() {
@@ -38,14 +38,17 @@ class FriendsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
-        return 5
+        return friends.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FriendsCell", for: indexPath)
+        guard  let cell = tableView.dequeueReusableCell(withIdentifier: "FriendsCell", for: indexPath) as? FriendTableViewCell else {
+            preconditionFailure("Error")
+        }
 
-        // Configure the cell...
+        cell.friendsName.text = friends[indexPath.row].name
+        //cell.friendsImage.
 
         return cell
     }

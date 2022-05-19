@@ -13,13 +13,13 @@
 		4E22031C28009C0800DF0032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E22031B28009C0800DF0032 /* Assets.xcassets */; };
 		4E22031F28009C0800DF0032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E22031D28009C0800DF0032 /* LaunchScreen.storyboard */; };
 		4E2203272800A2A600DF0032 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2203262800A2A600DF0032 /* TwoViewController.swift */; };
-		4E6D43F12832986F001F3F52 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6D43F02832986F001F3F52 /* User.swift */; };
 		4E6D43F328329880001F3F52 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6D43F228329880001F3F52 /* Group.swift */; };
 		4E6D43F92832A290001F3F52 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6D43F82832A290001F3F52 /* FriendTableViewCell.swift */; };
 		4E6F30312829944A00ADE201 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F30302829944A00ADE201 /* FriendsTableViewController.swift */; };
 		4E86926628352920000471CC /* MyGroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86926528352920000471CC /* MyGroupTableViewController.swift */; };
 		4E86926828352973000471CC /* AllGroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86926728352973000471CC /* AllGroupTableViewController.swift */; };
 		4EB6B92D28203CB300A2ACB1 /* UIViewController(+extension).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB6B92C28203CB300A2ACB1 /* UIViewController(+extension).swift */; };
+		4ECDEEFA283681A000E4C1B6 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECDEEF9283681A000E4C1B6 /* Friend.swift */; };
 		4EF0A4C8280F2DD900FE35A5 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF0A4C7280F2DD900FE35A5 /* ThreeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,13 +32,13 @@
 		4E22031E28009C0800DF0032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E22032028009C0800DF0032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E2203262800A2A600DF0032 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
-		4E6D43F02832986F001F3F52 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4E6D43F228329880001F3F52 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		4E6D43F82832A290001F3F52 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		4E6F30302829944A00ADE201 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		4E86926528352920000471CC /* MyGroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupTableViewController.swift; sourceTree = "<group>"; };
 		4E86926728352973000471CC /* AllGroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupTableViewController.swift; sourceTree = "<group>"; };
 		4EB6B92C28203CB300A2ACB1 /* UIViewController(+extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController(+extension).swift"; sourceTree = "<group>"; };
+		4ECDEEF9283681A000E4C1B6 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		4EF0A4C7280F2DD900FE35A5 /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +101,7 @@
 		4E6D43EF283297B7001F3F52 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4E6D43F02832986F001F3F52 /* User.swift */,
+				4ECDEEF9283681A000E4C1B6 /* Friend.swift */,
 				4E6D43F228329880001F3F52 /* Group.swift */,
 			);
 			path = Model;
@@ -195,8 +195,8 @@
 				4E2203272800A2A600DF0032 /* TwoViewController.swift in Sources */,
 				4E6F30312829944A00ADE201 /* FriendsTableViewController.swift in Sources */,
 				4EF0A4C8280F2DD900FE35A5 /* ThreeViewController.swift in Sources */,
-				4E6D43F12832986F001F3F52 /* User.swift in Sources */,
 				4E86926828352973000471CC /* AllGroupTableViewController.swift in Sources */,
+				4ECDEEFA283681A000E4C1B6 /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
