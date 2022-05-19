@@ -11,7 +11,7 @@ class FriendsTableViewController: UITableViewController {
     
     
     
-    var friends = ["Barak Obama","Ivan Baxter","Elizabeth Windzor","Ivan Ivanov","Alex Shevtsov","Steve Jobs"]
+   // var friends = ["Barak Obama","Ivan Baxter","Elizabeth Windzor","Ivan Ivanov","Alex Shevtsov","Steve Jobs"]
     
     
     
@@ -38,7 +38,7 @@ class FriendsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
-        return 10
+        return 5
     }
 
     
