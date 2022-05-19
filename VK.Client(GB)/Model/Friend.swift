@@ -13,13 +13,13 @@ import UIKit
 class Friend {
     
     var name: String
-    var avatar: UIImage?
+    var image: UIImage?
     var photos: UIImage?
     
-    init(nameFriend: String, avatarFriend: UIImage? = nil, photosFriend: UIImage? = nil) {
+    init(nameFriend: String, imageFriend: UIImage? = nil, photosFriend: UIImage? = nil) {
         
         self.name = nameFriend
-        self.avatar = avatarFriend
+        self.image = imageFriend
         self.photos = photosFriend
         
     }

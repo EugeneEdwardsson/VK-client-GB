@@ -15,7 +15,16 @@ class FriendsTableViewController: UITableViewController {
     
     
     
-    var friends = [Friend(nameFriend: "Barak Obama"), Friend(nameFriend: "Ivan Baxter"), Friend(nameFriend: "Elizabeth Windzor"), Friend(nameFriend: "Ivan Ivanov"), Friend(nameFriend: "Alex Shevtsov"), Friend(nameFriend: "Steve Jobs")]
+    var friends = [Friend(nameFriend: "Barak Obama", imageFriend: UIImage.init(systemName: "")),
+                   Friend(nameFriend: "Ivan Baxter", imageFriend: UIImage.init(systemName: "")),
+                   Friend(nameFriend: "Jim Carry", imageFriend: UIImage.init(systemName: "")),
+                   Friend(nameFriend: "Steve Jobs" ,  imageFriend: UIImage.init(systemName: "")),
+                   Friend(nameFriend: "Bob Marley", imageFriend: UIImage.init(systemName: "")),
+                   Friend(nameFriend: "Korben Dallas", imageFriend: UIImage.init(systemName: ""))]
+                            
+                                              
+   
+   
     
 
     override func viewDidLoad() {
@@ -48,7 +57,7 @@ class FriendsTableViewController: UITableViewController {
         }
 
         cell.friendsName.text = friends[indexPath.row].name
-        //cell.friendsImage.
+        cell.friendsImage.largeContentImage = friends[indexPath.row].image
 
         return cell
     }

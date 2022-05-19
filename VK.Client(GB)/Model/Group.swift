@@ -10,13 +10,13 @@ import UIKit
 
 class Group {
     
-    var avatar: UIImage?
-    var title: String
+    var image: UIImage?
+    var name: String
     
-    init(avatarGroup: UIImage? = nil, titleGroup: String) {
+    init(imageGroup: UIImage? = nil, nameGroup: String) {
         
-        self.avatar = avatarGroup
-        self.title = titleGroup
+        self.image = imageGroup
+        self.name = nameGroup
         
     }
 }
