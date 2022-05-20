@@ -20,16 +20,16 @@ class AllGroupTableViewController: UITableViewController {
     }
 
     
-    var allGroups = [Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Swift Developers"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Geo Hystory"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Adventures"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Movies"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Reggy Music"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Swift Developers"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Swift Developers"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Swift Developers"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Swift Developers"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Swift Developers")]
+    var allGroups = [Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Apple presentation"),
+                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "National Geographic"),
+                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "RBK"),
+                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Sci-Fi Movies"),
+                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "World Music"),
+                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Wylsa"),
+                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "News vlog"),
+                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Crazy Kitchen"),
+                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "The minimalist"),
+                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "LIFE")]
             
                             
                                               

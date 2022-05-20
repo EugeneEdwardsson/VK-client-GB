@@ -11,9 +11,8 @@ class FriendTableViewCell: UITableViewCell {
     
     
     
-    @IBOutlet weak var friendsImage: UIView!
-    
-    @IBOutlet weak var friendsName: UILabel!
+    @IBOutlet weak var imageFriends: UIImageView!
+    @IBOutlet weak var nameFriends: UILabel!
     
     
     

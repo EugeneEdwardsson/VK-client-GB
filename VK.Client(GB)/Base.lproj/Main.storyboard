@@ -144,7 +144,7 @@
         <!--Photos-->
         <scene sceneID="61z-Kh-Wlz">
             <objects>
-                <collectionViewController id="RwX-WH-H0m" sceneMemberID="viewController">
+                <collectionViewController id="RwX-WH-H0m" customClass="FriendsPhotosCollectionViewController" customModule="VK_Client_GB_" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="9n5-pT-WvK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,7 +156,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="reuse identifiers" id="r3P-4Z-XSK">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="reuse identifiers" id="r3P-4Z-XSK" customClass="PhotosCollectionViewCell" customModule="VK_Client_GB_" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GvO-Xu-gg8">
@@ -224,8 +224,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="friendsImage" destination="hbL-t6-pd8" id="DIJ-5h-Tgh"/>
-                                    <outlet property="friendsName" destination="vI4-19-ITy" id="IWA-kH-qHQ"/>
+                                    <outlet property="imageFriends" destination="hbL-t6-pd8" id="Dyw-y3-u6p"/>
+                                    <outlet property="nameFriends" destination="vI4-19-ITy" id="Fu4-sL-WZp"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
