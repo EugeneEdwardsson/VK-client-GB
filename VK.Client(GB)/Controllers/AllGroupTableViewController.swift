@@ -20,16 +20,16 @@ class AllGroupTableViewController: UITableViewController {
     }
 
     
-    var allGroups = [Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Apple presentation"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "National Geographic"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "RBK"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Sci-Fi Movies"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "World Music"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Wylsa"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "News vlog"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Crazy Kitchen"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "The minimalist"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "LIFE")]
+    var allGroups = [Group(imageGroup: UIImage.init(systemName: "applelogo"), nameGroup: "Apple presentation"),
+                  Group(imageGroup: UIImage.init(systemName: "globe"), nameGroup: "National Geographic"),
+                  Group(imageGroup: UIImage.init(systemName: "dollarsign.circle"), nameGroup: "RBK"),
+                  Group(imageGroup: UIImage.init(systemName: "film"), nameGroup: "Sci-Fi Movies"),
+                  Group(imageGroup: UIImage.init(systemName: "guitars"), nameGroup: "Rock Music"),
+                  Group(imageGroup: UIImage.init(systemName: "iphone.circle"), nameGroup: "Wylsa"),
+                  Group(imageGroup: UIImage.init(systemName: "newspaper.fill"), nameGroup: "News vlog"),
+                  Group(imageGroup: UIImage.init(systemName: "fork.knife.circle"), nameGroup: "Crazy Kitchen"),
+                  Group(imageGroup: UIImage.init(systemName: "figure.walk.diamond"), nameGroup: "The minimalist"),
+                  Group(imageGroup: UIImage.init(systemName: "hourglass.circle.fill"), nameGroup: "LIFE")]
             
                             
                                               

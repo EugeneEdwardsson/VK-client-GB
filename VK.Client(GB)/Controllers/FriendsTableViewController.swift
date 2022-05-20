@@ -19,12 +19,12 @@ class FriendsTableViewController: UITableViewController {
     
     
     
-    var friends = [Friend(imageFriend: UIImage.init(systemName: "person"), nameFriend: "Barak Obama"),
-                   Friend(imageFriend: UIImage.init(systemName: "person"), nameFriend: "Ivan Baxter"),
-                   Friend(imageFriend: UIImage.init(systemName: "person"), nameFriend: "Jim Carry"),
-                   Friend(imageFriend: UIImage.init(systemName: "person"), nameFriend: "Steve Jobs"),
-                   Friend(imageFriend: UIImage.init(systemName: "person"), nameFriend: "Bob Marley"),
-                   Friend(imageFriend: UIImage.init(systemName: "person"), nameFriend: "Korben Dallas")]
+    var friends = [Friend(imageFriend: UIImage.init(systemName: "brain.head.profile"), nameFriend: "Barak Obama"),
+                   Friend(imageFriend: UIImage.init(systemName: "person.crop.rectangle"), nameFriend: "Ivan Baxter"),
+                   Friend(imageFriend: UIImage.init(systemName: "face.smiling.fill"), nameFriend: "Jim Carry"),
+                   Friend(imageFriend: UIImage.init(systemName: "eyeglasses"), nameFriend: "Steve Jobs"),
+                   Friend(imageFriend: UIImage.init(systemName: "music.mic.circle"), nameFriend: "Bob Marley"),
+                   Friend(imageFriend: UIImage.init(systemName: "person.circle"), nameFriend: "Korben Dallas")]
                             
                                               
    
