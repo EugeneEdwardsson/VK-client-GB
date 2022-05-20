@@ -16,11 +16,11 @@ class MyGroupTableViewController: UITableViewController {
    
     }
     
-    var groups = [Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Swift Developers"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Geo Hystory"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Adventures"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Movies"),
-                  Group(imageGroup: UIImage.init(systemName: ""), nameGroup: "Reggy Music")]
+    var groups = [Group(imageGroup: UIImage.init(systemName: "swift"), nameGroup: "Swift Developers"),
+                  Group(imageGroup: UIImage.init(systemName: "globe.americas"), nameGroup: "Geo Hystory"),
+                  Group(imageGroup: UIImage.init(systemName: "airplane.departure"), nameGroup: "Adventures"),
+                  Group(imageGroup: UIImage.init(systemName: "4k.tv"), nameGroup: "Movies"),
+                  Group(imageGroup: UIImage.init(systemName: "headphones"), nameGroup: "Reggy Music")]
             
                             
                                               
