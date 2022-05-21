@@ -10,6 +10,10 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class FriendsPhotosCollectionViewController: UICollectionViewController {
+    
+    
+
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +47,7 @@ class FriendsPhotosCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 12
+        return 24
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -52,7 +56,9 @@ class FriendsPhotosCollectionViewController: UICollectionViewController {
             preconditionFailure("Error")
         }
     
-            
+       
+       // cell.imageAllGroups.image = allGroups[indexPath.row].image
+
     
         return cell
     }

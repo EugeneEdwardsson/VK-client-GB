@@ -11,9 +11,16 @@ class MyGroupTableViewController: UITableViewController {
     
     
     
-    @IBAction func addCity(segue: UIStoryboardSegue) {
+    
+    
+    
+    @IBAction func addGroup(segue: UIStoryboardSegue) {
+        
         
     }
+    
+    
+   
 
 
     override func viewDidLoad() {
