@@ -8,6 +8,12 @@
 import UIKit
 
 class MyGroupTableViewController: UITableViewController {
+    
+    
+    
+    @IBAction func addCity(segue: UIStoryboardSegue) {
+        
+    }
 
 
     override func viewDidLoad() {
