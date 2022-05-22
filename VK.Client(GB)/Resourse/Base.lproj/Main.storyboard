@@ -165,7 +165,7 @@
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.2.crop.square.stack" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2Mj-fD-Oeb">
                                             <rect key="frame" x="6" y="5" width="116" height="117.5"/>
-                                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            <color key="backgroundColor" systemColor="systemYellowColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="2Mj-fD-Oeb" secondAttribute="height" multiplier="1:1" id="O0S-gy-Lvk"/>
                                                 <constraint firstAttribute="width" constant="96" id="x59-l4-hc3"/>
@@ -223,6 +223,7 @@
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hbL-t6-pd8">
                                             <rect key="frame" x="20" y="10" width="80" height="65"/>
+                                            <color key="backgroundColor" systemColor="systemYellowColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="hbL-t6-pd8" secondAttribute="height" multiplier="1:1" id="AQP-i0-Tc5"/>
                                                 <constraint firstAttribute="width" constant="80" id="EvI-3X-c92"/>
@@ -247,7 +248,7 @@
                                 <connections>
                                     <outlet property="imageFriends" destination="hbL-t6-pd8" id="Dyw-y3-u6p"/>
                                     <outlet property="nameFriends" destination="vI4-19-ITy" id="Fu4-sL-WZp"/>
-                                    <segue destination="RwX-WH-H0m" kind="show" id="wDo-oP-uZE"/>
+                                    <segue destination="RwX-WH-H0m" kind="show" identifier="showFriendPhotos" id="wDo-oP-uZE"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -287,6 +288,8 @@
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bcb-BZ-n0r">
                                             <rect key="frame" x="16" y="10" width="80" height="80"/>
+                                            <color key="backgroundColor" systemColor="systemRedColor"/>
+                                            <color key="tintColor" systemColor="systemOrangeColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="Bcb-BZ-n0r" secondAttribute="height" multiplier="1:1" id="Wmu-7Y-Uax"/>
                                                 <constraint firstAttribute="width" constant="80" id="yP0-dg-cFC"/>
@@ -314,9 +317,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Groups" id="xR3-m7-md4">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="arrow.forward" catalog="system" id="0q0-qE-f0g">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="E18-NP-MoZ">
                             <connections>
-                                <segue destination="fmu-Kf-4HH" kind="show" id="kqA-0y-Cg4"/>
+                                <segue destination="fmu-Kf-4HH" kind="show" id="9vW-Ky-Tkf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -349,6 +352,8 @@
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NYa-FB-lRC">
                                             <rect key="frame" x="16" y="10" width="80" height="79"/>
+                                            <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                            <color key="tintColor" systemColor="systemOrangeColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="80" id="Wys-T9-NJg"/>
                                                 <constraint firstAttribute="width" secondItem="NYa-FB-lRC" secondAttribute="height" multiplier="1:1" id="c95-IU-GW0"/>
@@ -367,6 +372,7 @@
                                 <connections>
                                     <outlet property="imageAllGroups" destination="NYa-FB-lRC" id="F2v-3S-JyM"/>
                                     <outlet property="nameAllGroups" destination="giw-OG-vtM" id="Qb1-QA-v49"/>
+                                    <segue destination="4tk-qM-IdL" kind="unwind" unwindAction="addGroupWithSegue:" id="8n1-wE-NeY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -386,7 +392,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vky-sc-h1P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="4tk-qM-IdL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4279.7101449275369" y="515.625"/>
+            <point key="canvasLocation" x="4280" y="516"/>
         </scene>
         <!--Three View Controller-->
         <scene sceneID="Upg-km-wvL">
@@ -451,7 +457,6 @@
     </scenes>
     <resources>
         <image name="VK.com-logo.svg" width="1024" height="1024"/>
-        <image name="arrow.forward" catalog="system" width="128" height="98"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.2" catalog="system" width="128" height="81"/>
         <image name="person.2.crop.square.stack" catalog="system" width="113" height="128"/>
@@ -462,6 +467,15 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

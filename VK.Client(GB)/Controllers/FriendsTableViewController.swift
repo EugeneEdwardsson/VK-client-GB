@@ -56,5 +56,14 @@ class FriendsTableViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showFriendPhotos",
+           let destinationVC = segue.destination as? FriendsPhotosCollectionViewController,
+            let indexPath = tableView.indexPathForSelectedRow {
+            let friendsLabel = friends[indexPath.row].name
+            destinationVC.title = friendsLabel
+        
+        }
+    }
 
 }

@@ -83,11 +83,9 @@
 				4E6D43EF283297B7001F3F52 /* Model */,
 				4E6D43EE2832973D001F3F52 /* Controllers */,
 				4E6D43F72832A23C001F3F52 /* Cells */,
-				4E22031228009C0700DF0032 /* AppDelegate.swift */,
-				4E22031428009C0700DF0032 /* SceneDelegate.swift */,
-				4E22031828009C0700DF0032 /* Main.storyboard */,
-				4E22031B28009C0800DF0032 /* Assets.xcassets */,
-				4E22031D28009C0800DF0032 /* LaunchScreen.storyboard */,
+				4E92BF34283A4CDB003BA864 /* Extension */,
+				4E92BF33283A4CCA003BA864 /* Delegate */,
+				4E92BF32283A4C93003BA864 /* Resourse */,
 				4E22032028009C0800DF0032 /* Info.plist */,
 			);
 			path = "VK.Client(GB)";
@@ -102,7 +100,6 @@
 				4ECDEEFB2836877F00E4C1B6 /* FriendsPhotosCollectionViewController.swift */,
 				4E86926528352920000471CC /* MyGroupTableViewController.swift */,
 				4E86926728352973000471CC /* AllGroupTableViewController.swift */,
-				4EB6B92C28203CB300A2ACB1 /* UIViewController(+extension).swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -125,6 +122,33 @@
 				4E17E18828369E2400F7677C /* AllGroupsTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		4E92BF32283A4C93003BA864 /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				4E22031828009C0700DF0032 /* Main.storyboard */,
+				4E22031B28009C0800DF0032 /* Assets.xcassets */,
+				4E22031D28009C0800DF0032 /* LaunchScreen.storyboard */,
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		4E92BF33283A4CCA003BA864 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				4E22031228009C0700DF0032 /* AppDelegate.swift */,
+				4E22031428009C0700DF0032 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		4E92BF34283A4CDB003BA864 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4EB6B92C28203CB300A2ACB1 /* UIViewController(+extension).swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
