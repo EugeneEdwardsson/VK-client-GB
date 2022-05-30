@@ -68,7 +68,7 @@ class TwoViewController: UIViewController {
         guard let login = loginTextField.text,
               let password = passwordTextField.text,
               login == "",
-        password == "" else {showError(message: "Error password")
+        password == "" else {showError(message: "Error login/password")
             return}
         
         performSegue(withIdentifier: "login", sender: nil)
