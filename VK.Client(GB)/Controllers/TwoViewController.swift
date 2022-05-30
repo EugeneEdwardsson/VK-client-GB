@@ -65,13 +65,34 @@ class TwoViewController: UIViewController {
     @IBAction func tapButton(_ sender: Any) {
         
         
-        guard let login = loginTextField.text,
-              let password = passwordTextField.text,
-              login == "",
-        password == "" else {showError(message: "Error login/password")
-            return}
-        
-        performSegue(withIdentifier: "login", sender: nil)
-    }
-    
+           guard let login = loginTextField.text,
+                 let password = passwordTextField.text,
+                 login == "",
+           password == "" else {
+               
+              
+               
+               let alert = UIAlertController(title: "Error", message: "Error password or login!", preferredStyle: .alert)
+               
+               let enterButton =  UIAlertAction(title: "OK", style: .default) { _ in
+                   
+                   self.loginTextField.text?.removeAll()
+                   self.passwordTextField.text = ""
+               }
+               
+               
+               
+               alert.addAction(enterButton)
+               
+               present(alert, animated: true, completion: nil)
+               
+              
+               return
+               
+               
+               
+           }
+           
+           performSegue(withIdentifier: "login", sender: nil)
+       }
 }
