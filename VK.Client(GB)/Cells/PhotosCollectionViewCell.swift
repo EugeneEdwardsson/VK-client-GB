@@ -19,7 +19,7 @@ class PhotosCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         let tapLike = UITapGestureRecognizer(target: self, action: #selector(handlerTap(_:)))
         tapLike.numberOfTapsRequired = 2
-        containerView.addGestureRecognizer(tapLike)
+        //containerView.addGestureRecognizer(tapLike)
         
     }
     
@@ -29,7 +29,7 @@ class PhotosCollectionViewCell: UICollectionViewCell {
         
         if likeControl.isLiked {
             
-            likeControl.likeImage.image = UIImageView(systemName: )
+            //likeControl.likeImage.image = UIImageView(systemName: "person.fill")
         }
     }
 }

@@ -30,6 +30,8 @@ class TwoViewController: UIViewController {
         let tapScreen = UITapGestureRecognizer(target: self, action: #selector(hideScreen))
         view.addGestureRecognizer(tapScreen)
         
+       passwordTextField.isSecureTextEntry = true
+        
     }
     
     @objc func hideScreen() {
