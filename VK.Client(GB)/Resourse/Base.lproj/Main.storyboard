@@ -63,7 +63,7 @@
                                                         </constraints>
                                                         <color key="textColor" red="0.3613992929" green="0.50240749119999994" blue="0.70592862369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>

@@ -28,22 +28,24 @@ class TwoViewController: UIViewController {
         super.viewDidLoad()
 
         let tapScreen = UITapGestureRecognizer(target: self, action: #selector(hideScreen))
-        view.addGestureRecognizer(tapScreen)
+        scrollView?.addGestureRecognizer(tapScreen)
+        
+        
         
        passwordTextField.isSecureTextEntry = true
         
     }
     
+    
     @objc func hideScreen() {
-        view.endEditing(true)
+        self.scrollView?.endEditing(true)
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         NotificationCenter.default.addObserver(self, selector: #selector(willShowKeyboard(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
-        
-        
-        
-        
         
         NotificationCenter.default.addObserver(self, selector: #selector(willHideKeyboard(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         
@@ -51,18 +53,44 @@ class TwoViewController: UIViewController {
     }
     
     
+    override func viewWillDisappear(_ animated: Bool) {
+       super.viewWillDisappear(animated)
+        
+    NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+    NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        
+    }
+    
+    
+  
+    
 
-   @objc func willShowKeyboard(_ notification: NotificationCenter) {
+   @objc func willShowKeyboard(_ notification: Notification) {
+       
+       let info = notification.userInfo! as NSDictionary
+       let kbSize = (info.value(forKey: UIResponder.keyboardFrameEndUserInfoKey) as! NSValue).cgRectValue.size
+       let contentInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: kbSize.height, right: 0.0)
+             
+       self.scrollView?.contentInset = contentInsets
+       scrollView?.scrollIndicatorInsets = contentInsets
        
        print("ShowKeyboard - \(#function)")
         
     }
     
   
-    @objc func willHideKeyboard(_ notification: NotificationCenter) {
+    @objc func willHideKeyboard(_ notification: Notification) {
+        
+        let contentInsets = UIEdgeInsets.zero
+        scrollView?.contentInset = contentInsets
         
         print("HideKeyboard - \(#function)")
+        
     }
+    
+    
+    
     
     @IBAction func tapButton(_ sender: Any) {
         
