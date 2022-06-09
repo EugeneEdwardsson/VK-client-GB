@@ -60,10 +60,13 @@ class FriendsTableViewController: UITableViewController {
         if segue.identifier == "showFriendPhotos",
            let destinationVC = segue.destination as? FriendsPhotosCollectionViewController,
             let indexPath = tableView.indexPathForSelectedRow {
+            
             let friendsLabel = friends[indexPath.row].name
             destinationVC.title = friendsLabel
         
         }
     }
-
+           
+           
+      
 }

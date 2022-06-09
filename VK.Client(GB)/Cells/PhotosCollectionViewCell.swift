@@ -12,4 +12,24 @@ class PhotosCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var photosFriend: UIImageView!
     
+    
+    @IBOutlet var likeControl: LikePhotoControl!
+    @IBOutlet var containerView: UIView!
+    
+    override func awakeFromNib() {
+        let tapLike = UITapGestureRecognizer(target: self, action: #selector(handlerTap(_:)))
+        tapLike.numberOfTapsRequired = 2
+        //containerView.addGestureRecognizer(tapLike)
+        
+    }
+    
+    @objc func handlerTap(_: UITapGestureRecognizer){
+        
+        likeControl.isLiked.toggle()
+        
+        if likeControl.isLiked {
+            
+            //likeControl.likeImage.image = UIImageView(systemName: "person.fill")
+        }
+    }
 }
