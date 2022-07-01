@@ -17,6 +17,7 @@
 		4E80B834286F2920002B9736 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80B832286F2920002B9736 /* CustomTableViewCell.swift */; };
 		4E80B835286F2920002B9736 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E80B833286F2920002B9736 /* CustomTableViewCell.xib */; };
 		4E80B837286F2E26002B9736 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80B836286F2E26002B9736 /* FriendViewController.swift */; };
+		4E80B83B286F4DBD002B9736 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80B83A286F4DBD002B9736 /* GroupViewController.swift */; };
 		4EB6B92D28203CB300A2ACB1 /* UIViewController(+extension).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB6B92C28203CB300A2ACB1 /* UIViewController(+extension).swift */; };
 		4ECD66C3283B977A00718D6F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ECD66C2283B977A00718D6F /* Media.xcassets */; };
 		4ECDEEFA283681A000E4C1B6 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECDEEF9283681A000E4C1B6 /* Friend.swift */; };
@@ -36,6 +37,7 @@
 		4E80B832286F2920002B9736 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		4E80B833286F2920002B9736 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		4E80B836286F2E26002B9736 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		4E80B83A286F4DBD002B9736 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		4EB6B92C28203CB300A2ACB1 /* UIViewController(+extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController(+extension).swift"; sourceTree = "<group>"; };
 		4ECD66C2283B977A00718D6F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		4ECDEEF9283681A000E4C1B6 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				4E2203262800A2A600DF0032 /* TwoViewController.swift */,
 				4EF0A4C7280F2DD900FE35A5 /* ThreeViewController.swift */,
 				4E80B836286F2E26002B9736 /* FriendViewController.swift */,
+				4E80B83A286F4DBD002B9736 /* GroupViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				4E22031528009C0700DF0032 /* SceneDelegate.swift in Sources */,
 				4EB6B92D28203CB300A2ACB1 /* UIViewController(+extension).swift in Sources */,
 				4E80B837286F2E26002B9736 /* FriendViewController.swift in Sources */,
+				4E80B83B286F4DBD002B9736 /* GroupViewController.swift in Sources */,
 				4E6D43F328329880001F3F52 /* Group.swift in Sources */,
 				4E2203272800A2A600DF0032 /* TwoViewController.swift in Sources */,
 				4E80B834286F2920002B9736 /* CustomTableViewCell.swift in Sources */,
