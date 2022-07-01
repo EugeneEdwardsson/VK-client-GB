@@ -10,18 +10,12 @@ import UIKit
 
 
 
-class Friend {
+struct Friend {
     
-    var image: UIImage?
-    var name: String
-    var photos: UIImage?
+    var name = String()
+    var avatar = UIImage()
+    var photos = [UIImage]()
     
-    init(imageFriend: UIImage? = nil, nameFriend: String, photosFriend: UIImage? = nil) {
-        
-        
-        self.image = imageFriend
-        self.name = nameFriend
-        self.photos = photosFriend
-        
-    }
+  
+    
 }
