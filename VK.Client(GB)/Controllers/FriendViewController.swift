@@ -27,12 +27,12 @@ class FriendViewController: UIViewController {
     func fillFriendsArray() {
         
         
-        let friendOne = Friend(name: "Barak Obama", avatar: UIImage(systemName: "brain.head.profile")!, photos: [UIImage(named: "One")!])
-        let friendTwo = Friend(name: "Ivan Baxter", avatar: UIImage(systemName: "person.crop.rectangle")!, photos: [UIImage(named: "Two")!])
-        let friendThree = Friend(name: "Jim Carry", avatar: UIImage(systemName: "face.smiling.fill")!, photos: [UIImage(named: "Three")!])
-        let friendFour = Friend(name: "Steve Jobs", avatar: UIImage(systemName: "eyeglasses")!, photos: [UIImage(named: "Four")!])
-        let friendFive = Friend(name: "Bob Marley", avatar: UIImage(systemName: "music.mic.circle")!, photos: [UIImage(named: "One")!])
-        let friendSix = Friend(name: "Korben Dallas", avatar: UIImage(systemName: "person.circle")!, photos: [UIImage(named: "One")!])
+        let friendOne = Friend(name: "Barak Obama", avatar: UIImage(named: "minen")!, photos: [UIImage(named: "One")!])
+        let friendTwo = Friend(name: "Ivan Baxter", avatar: UIImage(named: "karate")!, photos: [UIImage(named: "Two")!])
+        let friendThree = Friend(name: "Jim Carry", avatar: UIImage(named: "banana")!, photos: [UIImage(named: "Three")!])
+        let friendFour = Friend(name: "Steve Jobs", avatar: UIImage(named: "cat")!, photos: [UIImage(named: "Four")!])
+        let friendFive = Friend(name: "Bob Marley", avatar: UIImage(named: "fleshas")!, photos: [UIImage(named: "One")!])
+        let friendSix = Friend(name: "Korben Dallas", avatar: UIImage(named: "ratatoui")!, photos: [UIImage(named: "One")!])
         
         friendsArray.append(friendOne)
         friendsArray.append(friendTwo)
