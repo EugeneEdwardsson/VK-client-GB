@@ -12,22 +12,73 @@ class AllGroupsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+        
+        
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+        let reuseIdentifierCustom = "reuseIdentifierCustom"
+        
+        
+        var groupArray = [Group]()
+        
+        
+        
+        override func viewDidAppear(_ animated: Bool) {
+            super.viewDidAppear(animated)
+            tableView.reloadData()
+        }
+       
+       
+          
+        
+        
+      
+            
+        
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifierCustom)
+            tableView.delegate = self
+            tableView.dataSource = self
+            
+            }
+        
+        
+        
+        
 
-        // Do any additional setup after loading the view.
+        
+
     }
+
+
+
+    extension AllGroupsViewController: UITableViewDelegate, UITableViewDataSource {
+        
+        
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return groupArray.count
+        }
+        
+     
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifierCustom", for: indexPath) as? CustomTableViewCell else {return UITableViewCell()}
+            cell.configure(group: groupArray[indexPath.row])
+            
+            return cell
+        }
+        
+        
+
+
+
+  }
+
+
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
+        //var groups = [Group(imageGroup: UIImage.init(systemName: "swift"), nameGroup: "Swift Developers"),
+        // Group(imageGroup: UIImage.init(systemName: "globe.americas"), nameGroup: "Geo History"),
+        // Group(imageGroup: UIImage.init(systemName: "airplane.departure"), nameGroup: "Adventures"),
+        //   Group(imageGroup: UIImage.init(systemName: "4k.tv"), nameGroup: "Movies"),
+        //  Group(imageGroup: UIImage.init(systemName: "headphones"), nameGroup: "Reggy Music")]
+        
