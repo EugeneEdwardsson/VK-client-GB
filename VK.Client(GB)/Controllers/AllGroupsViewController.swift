@@ -13,12 +13,41 @@ class AllGroupsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
         
+    
+    var allGroups = [Group]()
+    
+    
+    
+    
+    
+    func fillGroups(){
         
+        let groupOne = Group(title: "Apple presentation", avatar: UIImage(systemName: "applelogo"))
+        let groupTwo = Group(title: "National Geographic", avatar: UIImage(systemName: "globe"))
+        let groupThree = Group(title: "RBK", avatar: UIImage(systemName: "dollarsign.circle"))
+        let groupFour = Group(title: "Sci-Fi Movies", avatar: UIImage(systemName: "film"))
+        let groupFive = Group(title: "Rock Music", avatar: UIImage(systemName: "guitars"))
+        let groupSix = Group(title: "Wylsa", avatar: UIImage(systemName: "iphone.circle"))
+        let groupSeven = Group(title: "News vlog", avatar: UIImage(systemName: "newspaper.fill"))
+        let groupEight = Group(title: "Crazy Kitchen", avatar: UIImage(systemName: "fork.knife.circle"))
+        let groupNine = Group(title: "The minimalist", avatar: UIImage(systemName: "figure.walk.diamond"))
+        let groupTen = Group(title: "LIFE", avatar: UIImage(systemName: "hourglass.circle.fill"))
+        let groupEleven = Group(title: "Swift Developers", avatar: UIImage(named: "swift"))
+        let groupTwelve = Group(title: "Geo History", avatar: UIImage(systemName: "globe.americas"))
+        let groupThreeteen = Group(title: "Adventures", avatar: UIImage(systemName: "airplane.departure"))
+        let groupFourteen = Group(title: "Movies", avatar: UIImage(systemName: "4k.tv"))
+        let groupFiveteen = Group(title: "Reggy Music", avatar: UIImage(systemName: "headphones"))
+    }
+    
+    
+    
+
+    
 
         let reuseIdentifierCustom = "reuseIdentifierCustom"
         
         
-        var groupArray = [Group]()
+       
         
         
         
@@ -76,9 +105,4 @@ class AllGroupsViewController: UIViewController {
 
 
     
-        //var groups = [Group(imageGroup: UIImage.init(systemName: "swift"), nameGroup: "Swift Developers"),
-        // Group(imageGroup: UIImage.init(systemName: "globe.americas"), nameGroup: "Geo History"),
-        // Group(imageGroup: UIImage.init(systemName: "airplane.departure"), nameGroup: "Adventures"),
-        //   Group(imageGroup: UIImage.init(systemName: "4k.tv"), nameGroup: "Movies"),
-        //  Group(imageGroup: UIImage.init(systemName: "headphones"), nameGroup: "Reggy Music")]
-        
+      
