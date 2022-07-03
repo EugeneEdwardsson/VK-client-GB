@@ -1,5 +1,5 @@
 //
-//  FriendViewController+(UITableViewDelegate,UITableViewDataSource).swift
+//  FriendViewController+(UITableViewDataSource).swift
 //  VK.Client(GB)
 //
 //  Created by Eugene Berezkin on 03.07.2022.
@@ -11,16 +11,22 @@ import UIKit
 
 
 
-extension FriendViewController: UITableViewDelegate, UITableViewDataSource {
+extension FriendViewController: UITableViewDataSource {
+    
+    
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return arrayWord(source: friendsArray).count
     }
     
+   
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return miniArrayWord(source: friendsArray, word: arrayWord(source: friendsArray)[section]).count
     }
+ 
     
  
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -30,17 +36,13 @@ extension FriendViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        
-        performSegue(withIdentifier: fromFriendsToGallery, sender: friendsArray[indexPath.row])
-    }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        return cellHeight
-    }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return arrayWord(source: friendsArray)[section].uppercased()
     }
+    
+    
+    
+    
 }
