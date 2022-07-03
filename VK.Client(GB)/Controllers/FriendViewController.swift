@@ -28,14 +28,8 @@ class FriendViewController: UIViewController {
     
     let reuseIdentifierCustom = "reuseIdentifierCustom"
     let fromFriendsToGallery = "fromFriendsToGallery"
-    
-    
-    
-    
-    
-    
     var friendsArray = [Friend]()
-    
+    var saveArray = [Friend]()
     
     
     
@@ -76,10 +70,11 @@ class FriendViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fillFriendsArray()
+        saveArray = friendsArray
         tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifierCustom)
         tableView.delegate = self
         tableView.dataSource = self
-        
+        searchBar.delegate = self
         
         
 
@@ -103,6 +98,20 @@ class FriendViewController: UIViewController {
 }
 
 
+
+
+extension FriendViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            self.friendsArray = self.saveArray
+        } else {
+            self.friendsArray = self.friendsArray.filter({item in item.name.lowercased().contains(searchText.lowercased())})
+        }
+        self.tableView.reloadData()
+    }
+    
+}
 
 
     

@@ -260,11 +260,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4yl-ez-bqo">
-                                <rect key="frame" x="0.0" y="139" width="414" height="674"/>
+                                <rect key="frame" x="0.0" y="147" width="414" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="RQi-iI-YJh">
-                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
+                                <rect key="frame" x="8" y="88" width="398" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
@@ -273,11 +273,11 @@
                         <constraints>
                             <constraint firstItem="4uo-5V-nfJ" firstAttribute="bottom" secondItem="4yl-ez-bqo" secondAttribute="bottom" id="1Uv-Z5-ng5"/>
                             <constraint firstItem="4uo-5V-nfJ" firstAttribute="trailing" secondItem="4yl-ez-bqo" secondAttribute="trailing" id="CGq-eB-FxK"/>
-                            <constraint firstItem="RQi-iI-YJh" firstAttribute="leading" secondItem="4uo-5V-nfJ" secondAttribute="leading" id="ErK-Ya-xLM"/>
+                            <constraint firstItem="RQi-iI-YJh" firstAttribute="leading" secondItem="4uo-5V-nfJ" secondAttribute="leading" constant="8" id="ErK-Ya-xLM"/>
                             <constraint firstItem="RQi-iI-YJh" firstAttribute="top" secondItem="4uo-5V-nfJ" secondAttribute="top" id="MyS-yU-J9l"/>
-                            <constraint firstItem="4yl-ez-bqo" firstAttribute="top" secondItem="RQi-iI-YJh" secondAttribute="bottom" id="VBm-5z-8Uv"/>
+                            <constraint firstItem="4yl-ez-bqo" firstAttribute="top" secondItem="RQi-iI-YJh" secondAttribute="bottom" constant="8" id="VBm-5z-8Uv"/>
                             <constraint firstItem="4yl-ez-bqo" firstAttribute="leading" secondItem="4uo-5V-nfJ" secondAttribute="leading" id="hjJ-vM-aec"/>
-                            <constraint firstItem="4uo-5V-nfJ" firstAttribute="trailing" secondItem="RQi-iI-YJh" secondAttribute="trailing" id="jaO-xC-201"/>
+                            <constraint firstItem="4uo-5V-nfJ" firstAttribute="trailing" secondItem="RQi-iI-YJh" secondAttribute="trailing" constant="8" id="jaO-xC-201"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My friends" id="TYb-kT-ym9"/>
