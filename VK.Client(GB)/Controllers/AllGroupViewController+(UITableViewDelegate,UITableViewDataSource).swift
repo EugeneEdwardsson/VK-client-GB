@@ -28,7 +28,16 @@ extension AllGroupsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        self.selectedGroup = allGroups[indexPath.row]
+        performSegue(withIdentifier: fromAllGroupsToGroupsSegue, sender: nil)
+    }
+   
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return cellHeight
+    }
 
-
-
+    
+    
 }

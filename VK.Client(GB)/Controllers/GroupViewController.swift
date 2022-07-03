@@ -15,7 +15,7 @@ class GroupViewController: UIViewController {
     
 
     let reuseIdentifierCustom = "reuseIdentifierCustom"
-    
+    let fromAllGroupsToGroupsSegue = "fromAllGroupsToGroups"
     
     var groupArray = [Group]()
     
@@ -28,11 +28,7 @@ class GroupViewController: UIViewController {
    
    
       
-    
-    
-  
-        
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +40,21 @@ class GroupViewController: UIViewController {
     
     
     
+    
+    func isItemArray(group: Group) -> Bool{
+        return groupArray.contains { sourceGroup in sourceGroup.title == group.title }
+    }
+    
+    
+    @IBAction func groupUnwindAction(unwindSegue: UIStoryboardSegue){
+        if unwindSegue.identifier == fromAllGroupsToGroupsSegue,
+           let sourceVC = unwindSegue.source as? AllGroupsViewController,
+           let selectedGroup = sourceVC.selectedGroup as? Group {
+            if isItemArray(group: selectedGroup) {return}
+            self.groupArray.append(selectedGroup)
+            tableView.reloadData()
+        }
+    }
     
 
     

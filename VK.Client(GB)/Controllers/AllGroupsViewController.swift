@@ -15,8 +15,9 @@ class AllGroupsViewController: UIViewController {
         
     
     var allGroups = [Group]()
+    let fromAllGroupsToGroupsSegue = "fromAllGroupsToGroups"
     
-    
+    var selectedGroup: Group?
     
     
     
@@ -91,7 +92,7 @@ class AllGroupsViewController: UIViewController {
         
         
         
-        
+    
 
         
 

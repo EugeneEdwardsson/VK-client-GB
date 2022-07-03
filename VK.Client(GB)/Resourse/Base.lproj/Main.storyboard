@@ -200,15 +200,10 @@
                             <constraint firstItem="w5T-F2-aOy" firstAttribute="bottom" secondItem="bar-fQ-79f" secondAttribute="bottom" id="r5q-FI-ckr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="All groups" id="NT4-Bp-7Yl">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="Z66-Fa-H4p">
-                            <connections>
-                                <segue destination="3bb-RT-dMu" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="yKa-vZ-YWf"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="All groups" id="NT4-Bp-7Yl"/>
                     <connections>
                         <outlet property="tableView" destination="bar-fQ-79f" id="qoi-ih-eCi"/>
+                        <segue destination="3bb-RT-dMu" kind="unwind" identifier="fromAllGroupsToGroups" unwindAction="groupUnwindActionWithUnwindSegue:" id="JJa-52-lQz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P02-i3-rvM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
