@@ -10,10 +10,17 @@ import UIKit
 class FriendViewController: UIViewController {
     
     
+    
+    
     @IBOutlet weak var tableView: UITableView!
     
     
     let reuseIdentifierCustom = "reuseIdentifierCustom"
+    let fromFriendsToGallery = "fromFriendsToGallery"
+    
+    
+    
+    
     
     
     var friendsArray = [Friend]()
@@ -27,12 +34,12 @@ class FriendViewController: UIViewController {
     func fillFriendsArray() {
         
         
-        let friendOne = Friend(name: "Barak Obama", avatar: UIImage(named: "minen")!, photos: [UIImage(named: "One")!])
+        let friendOne = Friend(name: "Barak Obama", avatar: UIImage(named: "minen")!, photos: [UIImage(named: "Two")!])
         let friendTwo = Friend(name: "Ivan Baxter", avatar: UIImage(named: "karate")!, photos: [UIImage(named: "Two")!])
         let friendThree = Friend(name: "Jim Carry", avatar: UIImage(named: "banana")!, photos: [UIImage(named: "Three")!])
         let friendFour = Friend(name: "Steve Jobs", avatar: UIImage(named: "cat")!, photos: [UIImage(named: "Four")!])
-        let friendFive = Friend(name: "Bob Marley", avatar: UIImage(named: "fleshas")!, photos: [UIImage(named: "One")!])
-        let friendSix = Friend(name: "Korben Dallas", avatar: UIImage(named: "ratatoui")!, photos: [UIImage(named: "One")!])
+        let friendFive = Friend(name: "Bob Marley", avatar: UIImage(named: "fleshas")!, photos: [UIImage(named: "Two")!])
+        let friendSix = Friend(name: "Korben Dallas", avatar: UIImage(named: "ratatoui")!, photos: [UIImage(named: "Two")!])
         
         friendsArray.append(friendOne)
         friendsArray.append(friendTwo)
@@ -59,10 +66,19 @@ class FriendViewController: UIViewController {
 
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == fromFriendsToGallery,
+          //let sourceVC = segue.source as? FriendViewController,
+           let destinationVC = segue.destination as? PhotoGalleryViewController,
+           let friends = sender as? Friend {
+            
+            destinationVC.photos = friends.photos
+            
+        }
+    }
     
     
     
-
     
 
 }

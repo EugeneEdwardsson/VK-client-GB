@@ -18,11 +18,9 @@ class PhotoGalleryViewController: UIViewController {
     
     
    
-   var photos = [UIImage(named: "peace")!, UIImage(named: "peace")!, UIImage(named: "peace")!, UIImage(named: "peace")!, UIImage(named: "peace")!, UIImage(named: "peace")!]
+   var photos = [UIImage]()
     
-    
-    
-    override func viewDidLoad() {
+   override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self

@@ -13,7 +13,7 @@ extension PhotoGalleryViewController: UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let collectionViewWidth = collectionView.bounds.width
-        let oneSpace = CGFloat(10)
+        let oneSpace = CGFloat(1)
         let lineCount = CGFloat(2)
         let cellWidth = collectionViewWidth / lineCount - oneSpace
         return CGSize(width: cellWidth, height: cellWidth)
