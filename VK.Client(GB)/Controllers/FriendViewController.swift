@@ -13,6 +13,13 @@ class FriendViewController: UIViewController {
     
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    
+    
+    
+    
+    
     
     
     let reuseIdentifierCustom = "reuseIdentifierCustom"

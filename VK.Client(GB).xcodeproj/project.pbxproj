@@ -137,10 +137,17 @@
 			children = (
 				4E80B83A286F4DBD002B9736 /* GroupViewController.swift */,
 				4E352373287194AE00F4C463 /* GroupViewController+(UITableViewDelegate,UITableViewDataSource).swift */,
+			);
+			name = Group;
+			sourceTree = "<group>";
+		};
+		4E35238A2871E74A00F4C463 /* AllGroups */ = {
+			isa = PBXGroup;
+			children = (
 				4E80B83C286F5650002B9736 /* AllGroupsViewController.swift */,
 				4E3523752871953200F4C463 /* AllGroupViewController+(UITableViewDelegate,UITableViewDataSource).swift */,
 			);
-			name = Group;
+			name = AllGroups;
 			sourceTree = "<group>";
 		};
 		4E6D43EE2832973D001F3F52 /* Controllers */ = {
@@ -150,6 +157,7 @@
 				4EF0A4C7280F2DD900FE35A5 /* ThreeViewController.swift */,
 				4E35236F2871937200F4C463 /* Friends */,
 				4E3523722871948600F4C463 /* Group */,
+				4E35238A2871E74A00F4C463 /* AllGroups */,
 				4E35236D28718B4600F4C463 /* PhotoGallery */,
 			);
 			path = Controllers;
