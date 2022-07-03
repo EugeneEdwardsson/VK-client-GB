@@ -52,21 +52,4 @@ class GroupViewController: UIViewController {
 
 
 
-extension GroupViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return groupArray.count
-    }
-    
- 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifierCustom", for: indexPath) as? CustomTableViewCell else {return UITableViewCell()}
-        cell.configure(group: groupArray[indexPath.row])
-        
-        return cell
-    }
-    
-    
 
-}

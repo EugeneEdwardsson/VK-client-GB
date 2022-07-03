@@ -99,27 +99,7 @@ class AllGroupsViewController: UIViewController {
 
 
 
-    extension AllGroupsViewController: UITableViewDelegate, UITableViewDataSource {
-        
-        
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return allGroups.count
-        }
-        
-     
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifierCustom", for: indexPath) as? CustomTableViewCell else {return UITableViewCell()}
-            cell.configure(group: allGroups[indexPath.row])
-            
-            return cell
-        }
-        
-        
-
-
-
-  }
-
+    
 
     
       

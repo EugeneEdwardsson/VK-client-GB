@@ -16,6 +16,11 @@
 		4E35236228717ADB00F4C463 /* PhotoGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E35236028717ADB00F4C463 /* PhotoGalleryCollectionViewCell.swift */; };
 		4E35236328717ADB00F4C463 /* PhotoGalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E35236128717ADB00F4C463 /* PhotoGalleryCollectionViewCell.xib */; };
 		4E35236528717E0000F4C463 /* PhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E35236428717E0000F4C463 /* PhotoGalleryViewController.swift */; };
+		4E35236B28718A2400F4C463 /* PhotoGalleryViewController+(UICollectionViewDelegate, UICollectionViewDataSource).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E35236A28718A2400F4C463 /* PhotoGalleryViewController+(UICollectionViewDelegate, UICollectionViewDataSource).swift */; };
+		4E352371287193F300F4C463 /* FriendViewController+(UITableViewDelegate,UITableViewDataSource).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E352370287193F300F4C463 /* FriendViewController+(UITableViewDelegate,UITableViewDataSource).swift */; };
+		4E352374287194AE00F4C463 /* GroupViewController+(UITableViewDelegate,UITableViewDataSource).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E352373287194AE00F4C463 /* GroupViewController+(UITableViewDelegate,UITableViewDataSource).swift */; };
+		4E3523762871953200F4C463 /* AllGroupViewController+(UITableViewDelegate,UITableViewDataSource).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3523752871953200F4C463 /* AllGroupViewController+(UITableViewDelegate,UITableViewDataSource).swift */; };
+		4E3523782871986C00F4C463 /* PhotoGalleryController+(FlowLayout).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3523772871986C00F4C463 /* PhotoGalleryController+(FlowLayout).swift */; };
 		4E6D43F328329880001F3F52 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6D43F228329880001F3F52 /* Group.swift */; };
 		4E80B834286F2920002B9736 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80B832286F2920002B9736 /* CustomTableViewCell.swift */; };
 		4E80B835286F2920002B9736 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E80B833286F2920002B9736 /* CustomTableViewCell.xib */; };
@@ -40,6 +45,11 @@
 		4E35236028717ADB00F4C463 /* PhotoGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		4E35236128717ADB00F4C463 /* PhotoGalleryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoGalleryCollectionViewCell.xib; sourceTree = "<group>"; };
 		4E35236428717E0000F4C463 /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewController.swift; sourceTree = "<group>"; };
+		4E35236A28718A2400F4C463 /* PhotoGalleryViewController+(UICollectionViewDelegate, UICollectionViewDataSource).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoGalleryViewController+(UICollectionViewDelegate, UICollectionViewDataSource).swift"; sourceTree = "<group>"; };
+		4E352370287193F300F4C463 /* FriendViewController+(UITableViewDelegate,UITableViewDataSource).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FriendViewController+(UITableViewDelegate,UITableViewDataSource).swift"; sourceTree = "<group>"; };
+		4E352373287194AE00F4C463 /* GroupViewController+(UITableViewDelegate,UITableViewDataSource).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupViewController+(UITableViewDelegate,UITableViewDataSource).swift"; sourceTree = "<group>"; };
+		4E3523752871953200F4C463 /* AllGroupViewController+(UITableViewDelegate,UITableViewDataSource).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AllGroupViewController+(UITableViewDelegate,UITableViewDataSource).swift"; sourceTree = "<group>"; };
+		4E3523772871986C00F4C463 /* PhotoGalleryController+(FlowLayout).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoGalleryController+(FlowLayout).swift"; sourceTree = "<group>"; };
 		4E6D43F228329880001F3F52 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		4E80B832286F2920002B9736 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		4E80B833286F2920002B9736 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
@@ -85,7 +95,6 @@
 				4E6D43EF283297B7001F3F52 /* Model */,
 				4E6D43EE2832973D001F3F52 /* Controllers */,
 				4E6D43F72832A23C001F3F52 /* Cells */,
-				4E92BF34283A4CDB003BA864 /* Extension */,
 				4E92BF33283A4CCA003BA864 /* Delegate */,
 				4E92BF32283A4C93003BA864 /* Resourse */,
 				4E22032028009C0800DF0032 /* Info.plist */,
@@ -93,15 +102,53 @@
 			path = "VK.Client(GB)";
 			sourceTree = "<group>";
 		};
-		4E6D43EE2832973D001F3F52 /* Controllers */ = {
+		4E35236C28718AFE00F4C463 /* LoginController */ = {
 			isa = PBXGroup;
 			children = (
 				4E2203262800A2A600DF0032 /* TwoViewController.swift */,
-				4EF0A4C7280F2DD900FE35A5 /* ThreeViewController.swift */,
-				4E80B836286F2E26002B9736 /* FriendViewController.swift */,
-				4E80B83A286F4DBD002B9736 /* GroupViewController.swift */,
-				4E80B83C286F5650002B9736 /* AllGroupsViewController.swift */,
+				4EB6B92C28203CB300A2ACB1 /* UIViewController(+extension).swift */,
+			);
+			name = LoginController;
+			sourceTree = "<group>";
+		};
+		4E35236D28718B4600F4C463 /* PhotoGallery */ = {
+			isa = PBXGroup;
+			children = (
 				4E35236428717E0000F4C463 /* PhotoGalleryViewController.swift */,
+				4E35236A28718A2400F4C463 /* PhotoGalleryViewController+(UICollectionViewDelegate, UICollectionViewDataSource).swift */,
+				4E3523772871986C00F4C463 /* PhotoGalleryController+(FlowLayout).swift */,
+			);
+			name = PhotoGallery;
+			sourceTree = "<group>";
+		};
+		4E35236F2871937200F4C463 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				4E80B836286F2E26002B9736 /* FriendViewController.swift */,
+				4E352370287193F300F4C463 /* FriendViewController+(UITableViewDelegate,UITableViewDataSource).swift */,
+			);
+			name = Friends;
+			sourceTree = "<group>";
+		};
+		4E3523722871948600F4C463 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				4E80B83A286F4DBD002B9736 /* GroupViewController.swift */,
+				4E352373287194AE00F4C463 /* GroupViewController+(UITableViewDelegate,UITableViewDataSource).swift */,
+				4E80B83C286F5650002B9736 /* AllGroupsViewController.swift */,
+				4E3523752871953200F4C463 /* AllGroupViewController+(UITableViewDelegate,UITableViewDataSource).swift */,
+			);
+			name = Group;
+			sourceTree = "<group>";
+		};
+		4E6D43EE2832973D001F3F52 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E35236C28718AFE00F4C463 /* LoginController */,
+				4EF0A4C7280F2DD900FE35A5 /* ThreeViewController.swift */,
+				4E35236F2871937200F4C463 /* Friends */,
+				4E3523722871948600F4C463 /* Group */,
+				4E35236D28718B4600F4C463 /* PhotoGallery */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -144,14 +191,6 @@
 				4E22031428009C0700DF0032 /* SceneDelegate.swift */,
 			);
 			path = Delegate;
-			sourceTree = "<group>";
-		};
-		4E92BF34283A4CDB003BA864 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				4EB6B92C28203CB300A2ACB1 /* UIViewController(+extension).swift */,
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,13 +272,18 @@
 				4EB6B92D28203CB300A2ACB1 /* UIViewController(+extension).swift in Sources */,
 				4E80B83D286F5650002B9736 /* AllGroupsViewController.swift in Sources */,
 				4E35236228717ADB00F4C463 /* PhotoGalleryCollectionViewCell.swift in Sources */,
+				4E35236B28718A2400F4C463 /* PhotoGalleryViewController+(UICollectionViewDelegate, UICollectionViewDataSource).swift in Sources */,
 				4E80B837286F2E26002B9736 /* FriendViewController.swift in Sources */,
+				4E352371287193F300F4C463 /* FriendViewController+(UITableViewDelegate,UITableViewDataSource).swift in Sources */,
 				4E80B83B286F4DBD002B9736 /* GroupViewController.swift in Sources */,
 				4E6D43F328329880001F3F52 /* Group.swift in Sources */,
 				4E2203272800A2A600DF0032 /* TwoViewController.swift in Sources */,
 				4E35236528717E0000F4C463 /* PhotoGalleryViewController.swift in Sources */,
+				4E3523762871953200F4C463 /* AllGroupViewController+(UITableViewDelegate,UITableViewDataSource).swift in Sources */,
+				4E352374287194AE00F4C463 /* GroupViewController+(UITableViewDelegate,UITableViewDataSource).swift in Sources */,
 				4E80B834286F2920002B9736 /* CustomTableViewCell.swift in Sources */,
 				4EF0A4C8280F2DD900FE35A5 /* ThreeViewController.swift in Sources */,
+				4E3523782871986C00F4C463 /* PhotoGalleryController+(FlowLayout).swift in Sources */,
 				4ECDEEFA283681A000E4C1B6 /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

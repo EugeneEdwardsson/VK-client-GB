@@ -69,19 +69,7 @@ class FriendViewController: UIViewController {
 
 
 
-extension FriendViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return friendsArray.count
-    }
-    
- 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifierCustom", for: indexPath) as? CustomTableViewCell else {return UITableViewCell()}
-        cell.configure(friend: friendsArray[indexPath.row])
-        
-        return cell
-    }
+
     
     
-}
+

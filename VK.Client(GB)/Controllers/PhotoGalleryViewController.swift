@@ -8,13 +8,33 @@
 import UIKit
 
 class PhotoGalleryViewController: UIViewController {
+   
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+   
+    
+    let reuseIdentifierPhotoGalleryCell = "reuseIdentifierPhotoGalleryCell"
+    
+    
+   
+   var photos = [UIImage(named: "peace")!, UIImage(named: "peace")!, UIImage(named: "peace")!, UIImage(named: "peace")!, UIImage(named: "peace")!, UIImage(named: "peace")!]
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(UINib(nibName: "PhotoGalleryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifierPhotoGalleryCell)
     }
     
 
 
 }
+
+
+
+
+    
+
