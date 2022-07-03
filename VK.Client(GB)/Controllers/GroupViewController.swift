@@ -49,7 +49,7 @@ class GroupViewController: UIViewController {
     @IBAction func groupUnwindAction(unwindSegue: UIStoryboardSegue){
         if unwindSegue.identifier == fromAllGroupsToGroupsSegue,
            let sourceVC = unwindSegue.source as? AllGroupsViewController,
-           let selectedGroup = sourceVC.selectedGroup as? Group {
+           let selectedGroup = sourceVC.selectedGroup {
             if isItemArray(group: selectedGroup) {return}
             self.groupArray.append(selectedGroup)
             tableView.reloadData()

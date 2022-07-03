@@ -53,6 +53,39 @@ class FriendViewController: UIViewController {
     }
     
     
+    func arrayWord(source: [Friend]) -> [String] {
+        var result = [String]()
+        
+        for item in source {
+            let name = String(item.name.prefix(1))
+            if !result.contains(name.lowercased()) {
+                result.append(name.lowercased())
+            }
+        }
+        
+        return result
+    }
+    
+    
+    
+    
+    
+    func miniArrayWord(source: [Friend], word: String) -> [Friend] {
+        
+        var result = [Friend]()
+        
+        for item in source {
+            let name = String(item.name.prefix(1)).lowercased()
+            if name == word.lowercased() {
+                result.append(item)
+            }
+        }
+        
+        return result
+        
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
