@@ -92,6 +92,7 @@
             </constraints>
             <connections>
                 <outlet property="likeButton" destination="0SW-JE-NOL" id="5MD-7Z-QMc"/>
+                <outlet property="likeCount" destination="98z-Q3-dzQ" id="jYl-Cj-ZzH"/>
                 <outlet property="photoView" destination="sBR-DU-c8o" id="pno-Oc-FIr"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="105.80357142857143"/>

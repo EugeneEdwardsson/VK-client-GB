@@ -11,9 +11,12 @@ class PhotoGalleryCollectionViewCell: UICollectionViewCell {
     
     
     var likeState = false
+    var count = 0
+    
     
     @IBOutlet weak var photoView: UIImageView!
     @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var likeCount: UILabel!
     
     
     override func prepareForReuse() {
@@ -42,8 +45,13 @@ class PhotoGalleryCollectionViewCell: UICollectionViewCell {
         
         if likeState {
             button.setImage(UIImage(systemName: "heart"), for: .normal)
+            count -= 1
+            likeCount.text = String(count)
+            
         }else {
             button.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+            count += 1
+            likeCount.text = String(count)
         }
         likeState = !likeState
     }
