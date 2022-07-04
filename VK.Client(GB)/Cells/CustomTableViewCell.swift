@@ -48,17 +48,17 @@ class CustomTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         shadowView.layer.shadowColor = shadowColor.cgColor
-        shadowView.layer.shadowOffset = .zero
-        shadowView.layer.shadowRadius = 12
-        shadowView.layer.shadowOpacity = 0.50
+        shadowView.layer.shadowOffset = CGSize(width: 4, height: 4)
+        shadowView.layer.shadowRadius = 4
+        shadowView.layer.shadowOpacity = 0.60
         
         
     }
     
     
     override func layoutSubviews() {
-        avatarView.layer.cornerRadius = bounds.height/2
-        shadowView.layer.cornerRadius = bounds.height/2
+        avatarView.layer.cornerRadius = cellHeight / 2 - 4
+        shadowView.layer.cornerRadius = cellHeight / 2 - 4
     }
     
     
