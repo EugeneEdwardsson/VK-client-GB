@@ -15,7 +15,7 @@ class CustomTableViewCell: UITableViewCell {
     
     
     var shadowColor = UIColor.black
-    
+    var avatarColor = UIColor.systemIndigo
     
     override func prepareForReuse() {
         avatarView.image = nil
@@ -46,7 +46,8 @@ class CustomTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        avatarView.layer.borderWidth = 1
+        avatarView.layer.borderColor = avatarColor.cgColor
         shadowView.layer.shadowColor = shadowColor.cgColor
         shadowView.layer.shadowOffset = CGSize(width: 4, height: 4)
         shadowView.layer.shadowRadius = 4
@@ -57,8 +58,8 @@ class CustomTableViewCell: UITableViewCell {
     
     
     override func layoutSubviews() {
-        avatarView.layer.cornerRadius = cellHeight / 2 - 4
-        shadowView.layer.cornerRadius = cellHeight / 2 - 4
+        avatarView.layer.cornerRadius = cellHeight / 2 - 2
+        shadowView.layer.cornerRadius = cellHeight / 2 - 2
     }
     
     
