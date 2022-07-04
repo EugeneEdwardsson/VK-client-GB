@@ -14,7 +14,7 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var shadowView: UIView!
     
     
-    
+    var shadowColor = UIColor.black
     
     
     override func prepareForReuse() {
@@ -41,20 +41,32 @@ class CustomTableViewCell: UITableViewCell {
     
     
     
+  
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        avatarView.layer.cornerRadius = cellHeight / 2 - 6
-        shadowView.layer.cornerRadius = cellHeight / 2 - 6
-        shadowView.layer.shadowColor = UIColor.black.cgColor
-        shadowView.layer.shadowOffset = CGSize(width: 10, height: 10)
-        shadowView.layer.shadowRadius = 5
-        shadowView.layer.shadowOpacity = 0.1
+        
+        shadowView.layer.shadowColor = shadowColor.cgColor
+        shadowView.layer.shadowOffset = .zero
+        shadowView.layer.shadowRadius = 12
+        shadowView.layer.shadowOpacity = 0.50
+        
+        
     }
+    
+    
+    override func layoutSubviews() {
+        avatarView.layer.cornerRadius = bounds.height/2
+        shadowView.layer.cornerRadius = bounds.height/2
+    }
+    
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+       
     }
     
 }
