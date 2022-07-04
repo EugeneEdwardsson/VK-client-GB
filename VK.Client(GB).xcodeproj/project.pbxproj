@@ -31,6 +31,7 @@
 		4E80B837286F2E26002B9736 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80B836286F2E26002B9736 /* FriendViewController.swift */; };
 		4E80B83B286F4DBD002B9736 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80B83A286F4DBD002B9736 /* GroupViewController.swift */; };
 		4E80B83D286F5650002B9736 /* AllGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80B83C286F5650002B9736 /* AllGroupsViewController.swift */; };
+		4EB47F592872CD960032BE05 /* FriendViewController+(UISearchBarDelegate).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB47F582872CD960032BE05 /* FriendViewController+(UISearchBarDelegate).swift */; };
 		4EB6B92D28203CB300A2ACB1 /* UIViewController(+extension).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB6B92C28203CB300A2ACB1 /* UIViewController(+extension).swift */; };
 		4ECD66C3283B977A00718D6F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ECD66C2283B977A00718D6F /* Media.xcassets */; };
 		4ECDEEFA283681A000E4C1B6 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECDEEF9283681A000E4C1B6 /* Friend.swift */; };
@@ -64,6 +65,7 @@
 		4E80B836286F2E26002B9736 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		4E80B83A286F4DBD002B9736 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		4E80B83C286F5650002B9736 /* AllGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsViewController.swift; sourceTree = "<group>"; };
+		4EB47F582872CD960032BE05 /* FriendViewController+(UISearchBarDelegate).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FriendViewController+(UISearchBarDelegate).swift"; sourceTree = "<group>"; };
 		4EB6B92C28203CB300A2ACB1 /* UIViewController(+extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController(+extension).swift"; sourceTree = "<group>"; };
 		4ECD66C2283B977A00718D6F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		4ECDEEF9283681A000E4C1B6 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				4E35238D2871EAE000F4C463 /* FriendViewController+(UITableViewDelegate).swift */,
 				4E352370287193F300F4C463 /* FriendViewController+(UITableViewDataSource).swift */,
 				4E35238B2871E9BF00F4C463 /* FriendViewController+Array(Data).swift */,
+				4EB47F582872CD960032BE05 /* FriendViewController+(UISearchBarDelegate).swift */,
 			);
 			name = Friends;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				4E3523902871ED2C00F4C463 /* AllGroupsViewController+Array(Data).swift in Sources */,
 				4EB6B92D28203CB300A2ACB1 /* UIViewController(+extension).swift in Sources */,
 				4E80B83D286F5650002B9736 /* AllGroupsViewController.swift in Sources */,
+				4EB47F592872CD960032BE05 /* FriendViewController+(UISearchBarDelegate).swift in Sources */,
 				4E35236228717ADB00F4C463 /* PhotoGalleryCollectionViewCell.swift in Sources */,
 				4E35236B28718A2400F4C463 /* PhotoGalleryViewController+(UICollectionViewDelegate, UICollectionViewDataSource).swift in Sources */,
 				4E80B837286F2E26002B9736 /* FriendViewController.swift in Sources */,
