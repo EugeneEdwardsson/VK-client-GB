@@ -11,6 +11,7 @@ class CustomTableViewCell: UITableViewCell {
 
     @IBOutlet weak var avatarView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var shadowView: UIView!
     
     
     
@@ -42,7 +43,12 @@ class CustomTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        avatarView.layer.cornerRadius = 80/2
+        avatarView.layer.cornerRadius = cellHeight / 2 - 6
+        shadowView.layer.cornerRadius = cellHeight / 2 - 6
+        shadowView.layer.shadowColor = UIColor.black.cgColor
+        shadowView.layer.shadowOffset = CGSize(width: 10, height: 10)
+        shadowView.layer.shadowRadius = 5
+        shadowView.layer.shadowOpacity = 0.1
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
