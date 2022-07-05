@@ -10,20 +10,16 @@ import UIKit
 class PhotoGalleryCollectionViewCell: UICollectionViewCell {
     
     
-    var likeState = false
-    var count = 0
+  
     
     
     @IBOutlet weak var photoView: UIImageView!
-    @IBOutlet weak var likeButton: UIButton!
-    @IBOutlet weak var likeCount: UILabel!
     
     
     override func prepareForReuse() {
         super.prepareForReuse()
         self.photoView.image = nil
-        likeState = false
-        likeButton.setImage(UIImage(systemName: "heart"), for: .normal)
+        
         
     }
     
@@ -37,27 +33,6 @@ class PhotoGalleryCollectionViewCell: UICollectionViewCell {
     func configure(image: UIImage){
         photoView.image = image
     }
-    
-    
-    @IBAction func pressLikeButton(_ sender: Any) {
-        
-        guard let button = sender as? UIButton else {return}
-        
-        if likeState {
-            button.setImage(UIImage(systemName: "heart"), for: .normal)
-            count -= 1
-            likeCount.text = String(count)
-            
-        }else {
-            button.setImage(UIImage(systemName: "heart.fill"), for: .normal)
-            count += 1
-            likeCount.text = String(count)
-        }
-        likeState = !likeState
-    }
-    
-    
-    
-    
+
     
 }
