@@ -21,7 +21,10 @@ extension FriendViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         return cellHeight
+        
+       }
+    
+   
     }
     
     
-}
