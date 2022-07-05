@@ -17,6 +17,9 @@ class CustomTableViewCell: UITableViewCell {
     var shadowColor = UIColor.black
     var avatarColor = UIColor.systemIndigo
     
+    
+    
+    
     override func prepareForReuse() {
         avatarView.image = nil
         titleLabel.text = nil

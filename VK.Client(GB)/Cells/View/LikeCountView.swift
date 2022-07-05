@@ -9,11 +9,7 @@ import UIKit
 
 
 
-    protocol LikeCountProtocol: AnyObject {
-        func likeCountIncrement(count: Int)
-        func likeCountDecrement(count: Int)
-    }
-
+   
 
 
 
@@ -28,7 +24,6 @@ import UIKit
         @IBInspectable var count: Int = 0
 
         
-        weak var delegate: LikeCountProtocol?
         
         private var view: UIView?
         
@@ -68,13 +63,13 @@ import UIKit
                 button.setImage(UIImage(systemName: "heart"), for: .normal)
                 count -= 1
                 likeCountLabel.text = String(count)
-                delegate?.likeCountDecrement(count: count)
+               
             }
             else {
                 button.setImage(UIImage(systemName: "heart.fill"), for: .normal)
                 count += 1
                 likeCountLabel.text = String(count)
-                delegate?.likeCountIncrement(count: count)
+                
             }
             likeState = !likeState
         }

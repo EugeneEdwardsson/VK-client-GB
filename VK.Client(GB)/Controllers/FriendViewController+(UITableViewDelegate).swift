@@ -14,7 +14,7 @@ extension FriendViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         
-        performSegue(withIdentifier: fromFriendsToGallery, sender: friendsArray[indexPath.row])
+        performSegue(withIdentifier: fromFriendsToGallery, sender: miniArrayWord(source: friendsArray, word: arrayWord(source: friendsArray)[indexPath.section])[indexPath.row])
     }
     
     

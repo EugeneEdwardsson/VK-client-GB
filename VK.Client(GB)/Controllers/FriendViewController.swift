@@ -82,7 +82,6 @@ class FriendViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == fromFriendsToGallery,
-          //let sourceVC = segue.source as? FriendViewController,
            let destinationVC = segue.destination as? PhotoGalleryViewController,
            let friends = sender as? Friend {
             

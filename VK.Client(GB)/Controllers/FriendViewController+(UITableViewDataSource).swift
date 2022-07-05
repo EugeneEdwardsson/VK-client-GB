@@ -31,6 +31,7 @@ extension FriendViewController: UITableViewDataSource {
  
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifierCustom", for: indexPath) as? CustomTableViewCell else {return UITableViewCell()}
+        
         cell.configure(friend: miniArrayWord(source: friendsArray, word: arrayWord(source: friendsArray)[indexPath.section])[indexPath.row])
         
         return cell
