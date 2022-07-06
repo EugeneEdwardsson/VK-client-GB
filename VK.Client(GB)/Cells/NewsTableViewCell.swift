@@ -11,6 +11,7 @@ class NewsTableViewCell: UITableViewCell {
     
     
     
+    @IBOutlet weak var newsTitleView: UILabel!
     @IBOutlet weak var newsTextView: UILabel!
     @IBOutlet weak var newsImageView: UIImageView!
     @IBOutlet weak var newsContainerView: UIView!
@@ -19,6 +20,7 @@ class NewsTableViewCell: UITableViewCell {
     
     
     override func prepareForReuse() {
+        newsTitleView.text = nil
         newsTextView.text = nil
         newsImageView.image = nil
         newsContainerView = nil
@@ -26,6 +28,7 @@ class NewsTableViewCell: UITableViewCell {
     
     
     func configure(news: News){
+        newsTitleView.text = news.title
         newsTextView.text = news.text
         newsImageView.image = news.photo
         

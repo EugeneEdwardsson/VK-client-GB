@@ -12,6 +12,7 @@ import UIKit
 
 struct News {
     
+    var title = String()
     var text = String()
     var photo = UIImage()
     

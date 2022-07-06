@@ -14,7 +14,7 @@ extension NewsViewController {
     
 func fillNews(){
     
-    let newsOne = News(text:  "Cенсорный смартфон первого поколения iPhone. Был представлен 9 января 2007 года. Поступил в продажу в США 29 июня 2007 года.", photo: UIImage(named: "Iphone2G")!)
+    let newsOne = News(title: "Iphone 2G", text:  "Cенсорный смартфон первого поколения iPhone. Был представлен 9 января 2007 года. Поступил в продажу в США 29 июня 2007 года.", photo: UIImage(named: "Iphone2G")!)
     
    newsArray.append(newsOne)
     
