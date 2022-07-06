@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -178,6 +179,28 @@
             </objects>
             <point key="canvasLocation" x="3312" y="516"/>
         </scene>
+        <!--News-->
+        <scene sceneID="qzK-8S-26F">
+            <objects>
+                <navigationController id="Nka-0j-BDQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News" id="Nww-ld-Trf">
+                        <imageReference key="image" image="newspaper.fill" catalog="system" symbolScale="large"/>
+                        <imageReference key="selectedImage" image="newspaper" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="G6L-Fb-Odp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="twM-OF-eUU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5322" y="100"/>
+        </scene>
         <!--All groups-->
         <scene sceneID="zn3-AA-jYu">
             <objects>
@@ -220,11 +243,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" red="0.41049297010000002" green="0.46663456850000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" systemColor="systemIndigoColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="16y-0m-Xon" kind="relationship" relationship="viewControllers" id="eHZ-al-NfN"/>
                         <segue destination="aCG-Zd-KIX" kind="relationship" relationship="viewControllers" id="22O-UQ-Vw9"/>
+                        <segue destination="Nka-0j-BDQ" kind="relationship" relationship="viewControllers" id="1Ml-oM-8Rh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZJ-Hd-HR1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -235,12 +259,16 @@
         <scene sceneID="zfn-HU-FSa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="16y-0m-Xon" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Friends" image="person.fill" catalog="system" selectedImage="person" id="2wY-RL-PoT"/>
+                    <tabBarItem key="tabBarItem" title="Friends" selectedImage="person" catalog="system" id="2wY-RL-PoT">
+                        <imageReference key="image" image="person.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="J7d-Vd-lSL">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <color key="tintColor" systemColor="tintColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -351,12 +379,16 @@
         <scene sceneID="dT8-9f-5ac">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aCG-Zd-KIX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Groups" image="person.2.fill" catalog="system" selectedImage="person.2" id="QOR-1j-ZWj"/>
+                    <tabBarItem key="tabBarItem" title="Groups" selectedImage="person.2" catalog="system" id="QOR-1j-ZWj">
+                        <imageReference key="image" image="person.2.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z2r-D0-JLM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <color key="tintColor" systemColor="tintColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -368,8 +400,11 @@
             <point key="canvasLocation" x="2347.826086956522" y="515.625"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="tintColor"/>
     <resources>
         <image name="VK.com-logo.svg" width="1024" height="1024"/>
+        <image name="newspaper" catalog="system" width="128" height="111"/>
+        <image name="newspaper.fill" catalog="system" width="128" height="111"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.2" catalog="system" width="128" height="81"/>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
@@ -377,6 +412,12 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

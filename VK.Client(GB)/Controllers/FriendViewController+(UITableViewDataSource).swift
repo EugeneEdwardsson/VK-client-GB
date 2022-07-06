@@ -44,9 +44,9 @@ extension FriendViewController: UITableViewDataSource {
     }
     
     
-    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-       return saveArray.map({String($0.name)})
-   }
+     //func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+     // return saveArray.map({String($0.name.prefix(1).uppercased())})
+     // } ???? Подумать над реализацией если будет время!!!
     
     
     
