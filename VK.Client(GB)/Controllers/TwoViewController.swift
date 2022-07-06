@@ -24,15 +24,29 @@ class TwoViewController: UIViewController {
     }
     
     
+    
+    
+    
+    func addShadow(view: UIView){
+       
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOffset = CGSize(width: 10, height: 10)
+        view.layer.shadowRadius = 5
+        view.layer.shadowOpacity = 0.1
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let tapScreen = UITapGestureRecognizer(target: self, action: #selector(hideScreen))
         scrollView?.addGestureRecognizer(tapScreen)
+        passwordTextField.isSecureTextEntry = true
         
         
-        
-       passwordTextField.isSecureTextEntry = true
+        addShadow(view: loginTextField)
+        addShadow(view: passwordTextField)
+       
         
     }
     
@@ -108,6 +122,8 @@ class TwoViewController: UIViewController {
                    
                    self.loginTextField.text?.removeAll()
                    self.passwordTextField.text = ""
+                  
+               
                }
                
                
