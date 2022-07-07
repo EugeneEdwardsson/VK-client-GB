@@ -10,40 +10,40 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="164" id="KGk-i7-Jjw" customClass="NewsTableViewCell" customModule="VK_Client_GB_" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="163" id="KGk-i7-Jjw" customClass="NewsTableViewCell" customModule="VK_Client_GB_" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3s-mk-IoR" customClass="FuncBarView" customModule="VK_Client_GB_" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="534" width="414" height="60"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <rect key="frame" x="0.0" y="540" width="414" height="60"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="414" id="rz5-Jj-1EW"/>
                             <constraint firstAttribute="height" constant="60" id="u4Z-SS-PG8"/>
                         </constraints>
                     </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jch-fw-2lG">
-                        <rect key="frame" x="0.0" y="120" width="414" height="414"/>
+                        <rect key="frame" x="0.0" y="126" width="414" height="414"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="414" id="BVo-3n-ELk"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="414" id="BVo-3n-ELk"/>
                             <constraint firstAttribute="width" constant="414" id="iHo-P5-0oA"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8W9-6K-bm7">
-                        <rect key="frame" x="0.0" y="40" width="414" height="80"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8W9-6K-bm7">
+                        <rect key="frame" x="0.0" y="40" width="414" height="86"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="80" id="5gU-sr-m0P"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="5gU-sr-m0P"/>
                             <constraint firstAttribute="width" constant="414" id="xnm-Vk-gf7"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZz-KS-zbn">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZz-KS-zbn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
@@ -56,7 +56,6 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="SZz-KS-zbn" firstAttribute="centerX" secondItem="8W9-6K-bm7" secondAttribute="centerX" id="8yz-d1-Kew"/>
                     <constraint firstItem="SZz-KS-zbn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="DPA-PN-1yC"/>
                     <constraint firstItem="j3s-mk-IoR" firstAttribute="top" secondItem="Jch-fw-2lG" secondAttribute="bottom" id="E9O-AJ-eJw"/>
                     <constraint firstItem="j3s-mk-IoR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Eps-YJ-y5G"/>
@@ -83,6 +82,9 @@
         </tableViewCell>
     </objects>
     <resources>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

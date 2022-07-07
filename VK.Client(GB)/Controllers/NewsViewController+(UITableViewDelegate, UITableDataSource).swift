@@ -21,20 +21,19 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
  
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifierNews", for: indexPath) as? NewsTableViewCell else {return UITableViewCell()}
-        
-       cell.configure(news: newsArray[indexPath.row])
-        
+        cell.configure(news: newsArray[indexPath.row])
         return cell
     }
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-       
+        
+        print("You tapped cell number \(indexPath.row).")
     }
    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return cellHeightNews
+      return cellHeightNews
     }
 
     

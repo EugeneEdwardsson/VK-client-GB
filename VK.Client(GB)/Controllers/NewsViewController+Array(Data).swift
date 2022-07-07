@@ -18,6 +18,10 @@ func fillNews(){
     
    newsArray.append(newsOne)
     
+    let newsTwo = News(title: "Ipad", text:  "Планшет, выпускаемый компанией Apple. Первая версия планшета представлена на презентации в Сан-Франциско Стивом Джобсом 27 января 2010 года.", photo: UIImage(named: "Ipad")!)
+    
+   newsArray.append(newsTwo)
+    
    }
 }
 
