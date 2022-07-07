@@ -9,4 +9,4 @@ import UIKit
 
 
 let cellHeight: CGFloat = 80
-let cellHeightNews: CGFloat = 725
+let cellHeightNews: CGFloat = 600
