@@ -31,9 +31,9 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
         print("You tapped cell number \(indexPath.row).")
     }
    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-      return cellHeightNews
+       return cellHeightNews
     }
 
     

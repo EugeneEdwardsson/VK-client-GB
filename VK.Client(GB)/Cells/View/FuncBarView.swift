@@ -14,32 +14,32 @@ import UIKit
     private var view: UIView?
     
     override init(frame: CGRect) {
-        super.init(frame: frame)
-        setup()
-    }
+    super.init(frame: frame)
+    setup()
+     }
     
     required init?(coder: NSCoder) {
-        super.init(coder: coder)
+         super.init(coder: coder)
         setup()
     }
     
     
-    private func loadFromNib() -> UIView {
-        let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: "FuncBarView", bundle: bundle)
-        guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView else {return UIView()}
+     private func loadFromNib() -> UIView {
+     let bundle = Bundle(for: type(of: self))
+      let nib = UINib(nibName: "FuncBarView", bundle: bundle)
+      guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView else {return UIView()}
         return view
-    }
+     }
     
     
-    private func setup() {
+      private func setup() {
         view = loadFromNib()
         guard let view = view else {return}
         view.frame = bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         addSubview(view)
-    }
+     }
  
     
 }
