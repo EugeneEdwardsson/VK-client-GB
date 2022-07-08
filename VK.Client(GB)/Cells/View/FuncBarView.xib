@@ -8,7 +8,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FuncBarUIView" customModule="VK_Client_GB_" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FuncBarUIView" customModule="VK_Client_GB_" customModuleProvider="target">
+            <connections>
+                <outlet property="likeButton" destination="ktg-0f-HdS" id="Uf7-lT-xMX"/>
+                <outlet property="messageButton" destination="ebg-YL-Ua1" id="MOD-Qb-p3v"/>
+                <outlet property="shareButton" destination="Tm0-Ys-3CN" id="xiI-v2-bxO"/>
+                <outlet property="viewButton" destination="1Ar-uc-tYH" id="aqz-mP-77L"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="46"/>
@@ -37,6 +44,7 @@
                             </constraints>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" image="eye" catalog="system"/>
+                            <buttonConfiguration key="configuration" style="gray" image="eye" catalog="system"/>
                         </button>
                     </subviews>
                     <constraints>
@@ -67,6 +75,7 @@
                                     </constraints>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" image="hand.thumbsup" catalog="system"/>
+                                    <buttonConfiguration key="configuration" style="gray" image="hand.thumbsup" catalog="system"/>
                                 </button>
                             </subviews>
                             <constraints>
@@ -94,6 +103,7 @@
                                     </constraints>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" image="text.bubble" catalog="system"/>
+                                    <buttonConfiguration key="configuration" style="gray" image="text.bubble" catalog="system"/>
                                 </button>
                             </subviews>
                             <constraints>
@@ -124,6 +134,9 @@
                                     <state key="normal" image="arrowshape.turn.up.right" catalog="system">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <buttonConfiguration key="configuration" style="gray" image="arrowshape.turn.up.right" catalog="system">
+                                        <color key="baseForegroundColor" systemColor="systemIndigoColor"/>
+                                    </buttonConfiguration>
                                 </button>
                             </subviews>
                             <constraints>

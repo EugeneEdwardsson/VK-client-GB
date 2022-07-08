@@ -25,11 +25,11 @@ class NewsViewController: UIViewController {
         super.viewDidLoad()
         fillNews()
         tableView.register(UINib(nibName: "NewsTableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifierNews)
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 44.0
-       reloadInputViews()
+       tableView.delegate = self
+       tableView.dataSource = self
+       //tableView.rowHeight = UITableView.automaticDimension
+       //tableView.estimatedRowHeight = 44.0
+       
     }
     
 
