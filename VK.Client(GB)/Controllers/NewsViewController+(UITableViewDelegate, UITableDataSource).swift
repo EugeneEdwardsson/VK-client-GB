@@ -22,10 +22,8 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
         return newsArray.count
     }
     
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        return cellHeightNews
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
     
