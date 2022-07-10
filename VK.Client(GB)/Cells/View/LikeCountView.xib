@@ -51,7 +51,7 @@
                 <constraint firstItem="AFB-e9-qDy" firstAttribute="centerY" secondItem="kCE-Ot-2M1" secondAttribute="centerY" id="tpX-du-Zfj"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="237.68115942028987" y="156.02678571428569"/>
+            <point key="canvasLocation" x="237.68115942028987" y="155.35714285714286"/>
         </view>
     </objects>
     <resources>

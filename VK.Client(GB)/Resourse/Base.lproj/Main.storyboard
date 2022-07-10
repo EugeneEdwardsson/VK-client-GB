@@ -191,15 +191,48 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="G6L-Fb-Odp">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
+                    <connections>
+                        <segue destination="8JH-EF-jX8" kind="relationship" relationship="rootViewController" id="qaP-eO-1Ce"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twM-OF-eUU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5322" y="100"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="YMF-I9-Uoi">
+            <objects>
+                <viewController id="8JH-EF-jX8" customClass="NewsViewController" customModule="VK_Client_GB_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yDJ-YM-7u6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3ZH-qZ-NQz">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="542-1z-2Ih"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3ZH-qZ-NQz" firstAttribute="leading" secondItem="542-1z-2Ih" secondAttribute="leading" id="BY1-9Z-F7R"/>
+                            <constraint firstItem="3ZH-qZ-NQz" firstAttribute="top" secondItem="542-1z-2Ih" secondAttribute="top" id="nCv-ch-wzI"/>
+                            <constraint firstItem="542-1z-2Ih" firstAttribute="trailing" secondItem="3ZH-qZ-NQz" secondAttribute="trailing" id="urW-cT-ITN"/>
+                            <constraint firstItem="542-1z-2Ih" firstAttribute="bottom" secondItem="3ZH-qZ-NQz" secondAttribute="bottom" id="wb3-3z-Snu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="News" id="Qkm-dU-7Q9"/>
+                    <connections>
+                        <outlet property="tableView" destination="3ZH-qZ-NQz" id="Ozm-fg-vdG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iUC-ss-C6D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6264" y="100"/>
         </scene>
         <!--All groups-->
         <scene sceneID="zn3-AA-jYu">
@@ -223,7 +256,13 @@
                             <constraint firstItem="w5T-F2-aOy" firstAttribute="bottom" secondItem="bar-fQ-79f" secondAttribute="bottom" id="r5q-FI-ckr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="All groups" id="NT4-Bp-7Yl"/>
+                    <navigationItem key="navigationItem" title="All groups" id="NT4-Bp-7Yl">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="Ec7-wi-q0x">
+                            <connections>
+                                <segue destination="3bb-RT-dMu" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="8Tf-Pn-7mr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="bar-fQ-79f" id="qoi-ih-eCi"/>
                         <segue destination="3bb-RT-dMu" kind="unwind" identifier="fromAllGroupsToGroups" unwindAction="groupUnwindActionWithUnwindSegue:" id="JJa-52-lQz"/>
@@ -267,7 +306,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="J7d-Vd-lSL">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <color key="tintColor" systemColor="tintColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -387,7 +425,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z2r-D0-JLM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <color key="tintColor" systemColor="tintColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
