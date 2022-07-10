@@ -256,7 +256,13 @@
                             <constraint firstItem="w5T-F2-aOy" firstAttribute="bottom" secondItem="bar-fQ-79f" secondAttribute="bottom" id="r5q-FI-ckr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="All groups" id="NT4-Bp-7Yl"/>
+                    <navigationItem key="navigationItem" title="All groups" id="NT4-Bp-7Yl">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="Ec7-wi-q0x">
+                            <connections>
+                                <segue destination="3bb-RT-dMu" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="8Tf-Pn-7mr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="bar-fQ-79f" id="qoi-ih-eCi"/>
                         <segue destination="3bb-RT-dMu" kind="unwind" identifier="fromAllGroupsToGroups" unwindAction="groupUnwindActionWithUnwindSegue:" id="JJa-52-lQz"/>
