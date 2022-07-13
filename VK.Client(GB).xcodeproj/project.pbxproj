@@ -17,7 +17,7 @@
 		4E22031A28009C0700DF0032 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E22031828009C0700DF0032 /* Main.storyboard */; };
 		4E22031C28009C0800DF0032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E22031B28009C0800DF0032 /* Assets.xcassets */; };
 		4E22031F28009C0800DF0032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E22031D28009C0800DF0032 /* LaunchScreen.storyboard */; };
-		4E2203272800A2A600DF0032 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2203262800A2A600DF0032 /* TwoViewController.swift */; };
+		4E2203272800A2A600DF0032 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2203262800A2A600DF0032 /* LoginViewController.swift */; };
 		4E35236228717ADB00F4C463 /* PhotoGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E35236028717ADB00F4C463 /* PhotoGalleryCollectionViewCell.swift */; };
 		4E35236328717ADB00F4C463 /* PhotoGalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E35236128717ADB00F4C463 /* PhotoGalleryCollectionViewCell.xib */; };
 		4E35236528717E0000F4C463 /* PhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E35236428717E0000F4C463 /* PhotoGalleryViewController.swift */; };
@@ -46,7 +46,7 @@
 		4ECDEEFA283681A000E4C1B6 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECDEEF9283681A000E4C1B6 /* Friend.swift */; };
 		4EE239622873ED0800830363 /* LikeCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE239612873ED0800830363 /* LikeCountView.swift */; };
 		4EE239642873ED4400830363 /* LikeCountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE239632873ED4400830363 /* LikeCountView.xib */; };
-		4EF0A4C8280F2DD900FE35A5 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF0A4C7280F2DD900FE35A5 /* ThreeViewController.swift */; };
+		4EF0A4C8280F2DD900FE35A5 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF0A4C7280F2DD900FE35A5 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,7 +62,7 @@
 		4E22031B28009C0800DF0032 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E22031E28009C0800DF0032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E22032028009C0800DF0032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E2203262800A2A600DF0032 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		4E2203262800A2A600DF0032 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4E35236028717ADB00F4C463 /* PhotoGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		4E35236128717ADB00F4C463 /* PhotoGalleryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoGalleryCollectionViewCell.xib; sourceTree = "<group>"; };
 		4E35236428717E0000F4C463 /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		4ECDEEF9283681A000E4C1B6 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		4EE239612873ED0800830363 /* LikeCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeCountView.swift; sourceTree = "<group>"; };
 		4EE239632873ED4400830363 /* LikeCountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeCountView.xib; sourceTree = "<group>"; };
-		4EF0A4C7280F2DD900FE35A5 /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
+		4EF0A4C7280F2DD900FE35A5 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +147,9 @@
 		4E35236C28718AFE00F4C463 /* LoginController */ = {
 			isa = PBXGroup;
 			children = (
-				4E2203262800A2A600DF0032 /* TwoViewController.swift */,
+				4E2203262800A2A600DF0032 /* LoginViewController.swift */,
 				4EB6B92C28203CB300A2ACB1 /* UIViewController(+extension).swift */,
+				4EF0A4C7280F2DD900FE35A5 /* TabBarViewController.swift */,
 			);
 			name = LoginController;
 			sourceTree = "<group>";
@@ -199,7 +200,6 @@
 			isa = PBXGroup;
 			children = (
 				4E35236C28718AFE00F4C463 /* LoginController */,
-				4EF0A4C7280F2DD900FE35A5 /* ThreeViewController.swift */,
 				4E35236F2871937200F4C463 /* Friends */,
 				4E3523722871948600F4C463 /* Group */,
 				4E35238A2871E74A00F4C463 /* AllGroups */,
@@ -361,7 +361,7 @@
 				4E35237C2871CB6D00F4C463 /* Constans.swift in Sources */,
 				4E80B83B286F4DBD002B9736 /* GroupViewController.swift in Sources */,
 				4E6D43F328329880001F3F52 /* Group.swift in Sources */,
-				4E2203272800A2A600DF0032 /* TwoViewController.swift in Sources */,
+				4E2203272800A2A600DF0032 /* LoginViewController.swift in Sources */,
 				4E35236528717E0000F4C463 /* PhotoGalleryViewController.swift in Sources */,
 				4E35238C2871E9BF00F4C463 /* FriendViewController+Array(Data).swift in Sources */,
 				4E3523762871953200F4C463 /* AllGroupViewController+(UITableViewDelegate,UITableViewDataSource).swift in Sources */,
@@ -369,7 +369,7 @@
 				4E0FADD62875BF55007745C7 /* NewsViewController.swift in Sources */,
 				4E352374287194AE00F4C463 /* GroupViewController+(UITableViewDelegate,UITableViewDataSource).swift in Sources */,
 				4E80B834286F2920002B9736 /* CustomTableViewCell.swift in Sources */,
-				4EF0A4C8280F2DD900FE35A5 /* ThreeViewController.swift in Sources */,
+				4EF0A4C8280F2DD900FE35A5 /* TabBarViewController.swift in Sources */,
 				4E3523782871986C00F4C463 /* PhotoGalleryController+(FlowLayout).swift in Sources */,
 				4EB47F5B287305300032BE05 /* InterfaceBuilder(extension).swift in Sources */,
 				4ECDEEFA283681A000E4C1B6 /* Friend.swift in Sources */,

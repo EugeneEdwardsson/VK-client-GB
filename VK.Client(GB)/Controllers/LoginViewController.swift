@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TwoViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     
     @IBOutlet var scrollView: UIScrollView!
