@@ -357,6 +357,11 @@
                             <constraint firstItem="svP-of-gH7" firstAttribute="centerY" secondItem="NL4-WP-t2A" secondAttribute="centerY" id="RUM-Yh-JLT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstIndicator" destination="JDd-mo-zVU" id="R8v-2b-lja"/>
+                        <outlet property="secondIndicatorView" destination="v7z-r4-3B1" id="Zxr-Ex-s9R"/>
+                        <outlet property="thirdIndicatorView" destination="Aem-7o-Dqv" id="Y09-x1-iX3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wri-jk-9e8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
