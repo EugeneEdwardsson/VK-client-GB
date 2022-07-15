@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7XM-uk-2FV">
-                                        <rect key="frame" x="120.5" y="340" width="173" height="152"/>
+                                        <rect key="frame" x="120.5" y="320" width="173" height="152"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nhU-P3-L3r">
                                                 <rect key="frame" x="0.0" y="0.0" width="173" height="72"/>
@@ -158,9 +158,9 @@
                                     <constraint firstItem="HwZ-mx-N0M" firstAttribute="centerX" secondItem="1Q7-Uw-6YT" secondAttribute="centerX" id="Fac-xX-iNn"/>
                                     <constraint firstItem="snc-XM-a4q" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Qui-kv-517" secondAttribute="trailing" id="HdD-FH-1NM"/>
                                     <constraint firstItem="HwZ-mx-N0M" firstAttribute="leading" secondItem="snc-XM-a4q" secondAttribute="leading" constant="147" id="Ke8-zq-kek"/>
-                                    <constraint firstItem="Qui-kv-517" firstAttribute="top" secondItem="7XM-uk-2FV" secondAttribute="bottom" constant="20" id="PtV-l1-aNK"/>
+                                    <constraint firstItem="Qui-kv-517" firstAttribute="top" secondItem="7XM-uk-2FV" secondAttribute="bottom" constant="40" id="PtV-l1-aNK"/>
+                                    <constraint firstItem="7XM-uk-2FV" firstAttribute="top" secondItem="JDe-Mw-kP4" secondAttribute="bottom" constant="20" id="XVg-1s-EGp"/>
                                     <constraint firstItem="Qui-kv-517" firstAttribute="centerX" secondItem="1Q7-Uw-6YT" secondAttribute="centerX" id="a2i-yI-PDi"/>
-                                    <constraint firstItem="7XM-uk-2FV" firstAttribute="top" secondItem="xGz-Ii-a7q" secondAttribute="bottom" constant="100" id="aMm-z5-ukY"/>
                                     <constraint firstItem="JDe-Mw-kP4" firstAttribute="top" secondItem="xGz-Ii-a7q" secondAttribute="bottom" constant="30" id="hha-Dj-6RK"/>
                                     <constraint firstItem="xGz-Ii-a7q" firstAttribute="top" secondItem="HwZ-mx-N0M" secondAttribute="bottom" constant="36" id="nen-9O-Czf"/>
                                     <constraint firstItem="JDe-Mw-kP4" firstAttribute="centerX" secondItem="1Q7-Uw-6YT" secondAttribute="centerX" id="nvy-oQ-Zdc"/>

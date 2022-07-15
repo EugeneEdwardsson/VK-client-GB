@@ -10,7 +10,6 @@
 		4E0FADD62875BF55007745C7 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0FADD52875BF55007745C7 /* NewsViewController.swift */; };
 		4E0FADD92875BFA0007745C7 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0FADD72875BFA0007745C7 /* NewsTableViewCell.swift */; };
 		4E0FADDA2875BFA0007745C7 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E0FADD82875BFA0007745C7 /* NewsTableViewCell.xib */; };
-		4E1893B4287F1822001063C8 /* AnimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1893B3287F1822001063C8 /* AnimateViewController.swift */; };
 		4E1AEFA92876D38F00CEF54A /* FuncBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1AEFA82876D38F00CEF54A /* FuncBarView.swift */; };
 		4E1AEFAB2876D3C200CEF54A /* FuncBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E1AEFAA2876D3C200CEF54A /* FuncBarView.xib */; };
 		4E22031328009C0700DF0032 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E22031228009C0700DF0032 /* AppDelegate.swift */; };
@@ -37,7 +36,7 @@
 		4E80B837286F2E26002B9736 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80B836286F2E26002B9736 /* FriendViewController.swift */; };
 		4E80B83B286F4DBD002B9736 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80B83A286F4DBD002B9736 /* GroupViewController.swift */; };
 		4E80B83D286F5650002B9736 /* AllGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80B83C286F5650002B9736 /* AllGroupsViewController.swift */; };
-		4EA223102881B3E40058BD78 /* DotsAnimateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2230F2881B3E40058BD78 /* DotsAnimateView.swift */; };
+		4EA223102881B3E40058BD78 /* DotsAnimateView(extension).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2230F2881B3E40058BD78 /* DotsAnimateView(extension).swift */; };
 		4EB47F592872CD960032BE05 /* FriendViewController+(UISearchBarDelegate).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB47F582872CD960032BE05 /* FriendViewController+(UISearchBarDelegate).swift */; };
 		4EB47F5B287305300032BE05 /* InterfaceBuilder(extension).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB47F5A287305300032BE05 /* InterfaceBuilder(extension).swift */; };
 		4EB6B92D28203CB300A2ACB1 /* UIViewController(+extension).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB6B92C28203CB300A2ACB1 /* UIViewController(+extension).swift */; };
@@ -55,7 +54,6 @@
 		4E0FADD52875BF55007745C7 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		4E0FADD72875BFA0007745C7 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		4E0FADD82875BFA0007745C7 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
-		4E1893B3287F1822001063C8 /* AnimateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateViewController.swift; sourceTree = "<group>"; };
 		4E1AEFA82876D38F00CEF54A /* FuncBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncBarView.swift; sourceTree = "<group>"; };
 		4E1AEFAA2876D3C200CEF54A /* FuncBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FuncBarView.xib; sourceTree = "<group>"; };
 		4E22030F28009C0700DF0032 /* VK.Client(GB).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK.Client(GB).app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,7 +82,7 @@
 		4E80B836286F2E26002B9736 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		4E80B83A286F4DBD002B9736 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		4E80B83C286F5650002B9736 /* AllGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsViewController.swift; sourceTree = "<group>"; };
-		4EA2230F2881B3E40058BD78 /* DotsAnimateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsAnimateView.swift; sourceTree = "<group>"; };
+		4EA2230F2881B3E40058BD78 /* DotsAnimateView(extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DotsAnimateView(extension).swift"; sourceTree = "<group>"; };
 		4EB47F582872CD960032BE05 /* FriendViewController+(UISearchBarDelegate).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FriendViewController+(UISearchBarDelegate).swift"; sourceTree = "<group>"; };
 		4EB47F5A287305300032BE05 /* InterfaceBuilder(extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InterfaceBuilder(extension).swift"; sourceTree = "<group>"; };
 		4EB6B92C28203CB300A2ACB1 /* UIViewController(+extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController(+extension).swift"; sourceTree = "<group>"; };
@@ -154,8 +152,7 @@
 				4E2203262800A2A600DF0032 /* LoginViewController.swift */,
 				4EB6B92C28203CB300A2ACB1 /* UIViewController(+extension).swift */,
 				4EF0A4C7280F2DD900FE35A5 /* TabBarViewController.swift */,
-				4E1893B3287F1822001063C8 /* AnimateViewController.swift */,
-				4EA2230F2881B3E40058BD78 /* DotsAnimateView.swift */,
+				4EA2230F2881B3E40058BD78 /* DotsAnimateView(extension).swift */,
 			);
 			name = LoginController;
 			sourceTree = "<group>";
@@ -348,7 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EA223102881B3E40058BD78 /* DotsAnimateView.swift in Sources */,
+				4EA223102881B3E40058BD78 /* DotsAnimateView(extension).swift in Sources */,
 				4E35238E2871EAE000F4C463 /* FriendViewController+(UITableViewDelegate).swift in Sources */,
 				4E22031328009C0700DF0032 /* AppDelegate.swift in Sources */,
 				4E22031528009C0700DF0032 /* SceneDelegate.swift in Sources */,
@@ -369,7 +366,6 @@
 				4E80B83B286F4DBD002B9736 /* GroupViewController.swift in Sources */,
 				4E6D43F328329880001F3F52 /* Group.swift in Sources */,
 				4E2203272800A2A600DF0032 /* LoginViewController.swift in Sources */,
-				4E1893B4287F1822001063C8 /* AnimateViewController.swift in Sources */,
 				4E35236528717E0000F4C463 /* PhotoGalleryViewController.swift in Sources */,
 				4E35238C2871E9BF00F4C463 /* FriendViewController+Array(Data).swift in Sources */,
 				4E3523762871953200F4C463 /* AllGroupViewController+(UITableViewDelegate,UITableViewDataSource).swift in Sources */,
