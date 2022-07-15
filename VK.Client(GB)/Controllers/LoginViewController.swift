@@ -11,12 +11,18 @@ class LoginViewController: UIViewController {
 
     
     @IBOutlet var scrollView: UIScrollView!
-    
-    
     @IBOutlet var loginTextField: UITextField!
-    
-    
     @IBOutlet var passwordTextField: UITextField!
+    
+    
+    
+    
+    
+    @IBOutlet weak var firstIndicatorView: UIView!
+    @IBOutlet weak var secondIndicatorView: UIView!
+    @IBOutlet weak var thirdIndicatorView: UIView!
+    
+    
     
     
     @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue){
