@@ -6,9 +6,9 @@
 //
 
 import UIKit
-protocol CustomTableCellProtocol: AnyObject {
-func setCurrentCount(count: Int)
-}
+
+
+
 
 
 
@@ -24,7 +24,7 @@ class CustomTableViewCell: UITableViewCell {
     var avatarColor = UIColor.systemIndigo
     
     
-    weak var delegate: CustomTableCellProtocol?
+   
     var completion: ((Friend) -> Void)?
     var friend: Friend?
     
@@ -92,24 +92,22 @@ class CustomTableViewCell: UITableViewCell {
     
     @IBAction func pressAvatarButton(_ sender: Any) {
         
-        let scale = CGFloat(8)
+        let scale = CGFloat(10)
         
         
-        
-        UIView.animate(withDuration: 2) { [weak self] in
+        UIView.animate(withDuration: 1) { [weak self] in
             guard let self = self else {return}
-            self.avatarView.frame = CGRect(x: self.avatarView.frame.origin.x + scale / 2, y: self.avatarView.frame.origin.y + scale / 2, width: self.avatarView.frame.width - scale, height: self.avatarView.frame.height - scale)
+               self.avatarView.frame = CGRect(x: self.avatarView.frame.origin.x + scale / 2, y: self.avatarView.frame.origin.y + scale / 2, width: self.avatarView.frame.width - scale, height: self.avatarView.frame.height - scale)
         } completion: { isSuccessfully in
-            UIView.animate(withDuration: 2,
+            UIView.animate(withDuration: 1,
                            delay: 0,
-                           usingSpringWithDamping: 0.3,
-                           initialSpringVelocity: 0.7,
+                           usingSpringWithDamping: 0.7,
+                           initialSpringVelocity: 0.3,
                            options: []) { [weak self] in
                 guard let self = self else {return}
                 self.avatarView.frame = CGRect(x: self.avatarView.frame.origin.x + scale / 2, y: self.avatarView.frame.origin.y + scale / 2, width: self.avatarView.frame.width - scale, height: self.avatarView.frame.height - scale)
             } completion: { [weak self] isAllSuccessfully in
                 guard let self = self else {return}
-                self.delegate?.setCurrentCount(count: 15)
                 if isAllSuccessfully,
                    let friend = self.friend
                 {
