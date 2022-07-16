@@ -26,10 +26,20 @@
                                     <constraint firstAttribute="width" secondItem="fiM-qM-uel" secondAttribute="height" multiplier="1:1" id="Rla-xj-lHt"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGJ-Ic-VUq">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fiM-qM-uel" firstAttribute="leading" secondItem="hdp-Xr-JFy" secondAttribute="leading" id="1aa-xo-AFQ"/>
+                            <constraint firstItem="bGJ-Ic-VUq" firstAttribute="height" secondItem="fiM-qM-uel" secondAttribute="height" id="As9-CF-cyV"/>
+                            <constraint firstItem="bGJ-Ic-VUq" firstAttribute="centerX" secondItem="fiM-qM-uel" secondAttribute="centerX" id="ONK-rY-Noq"/>
+                            <constraint firstItem="bGJ-Ic-VUq" firstAttribute="centerY" secondItem="fiM-qM-uel" secondAttribute="centerY" id="WBA-B3-sNp"/>
+                            <constraint firstItem="bGJ-Ic-VUq" firstAttribute="width" secondItem="fiM-qM-uel" secondAttribute="width" id="fOP-RS-mCr"/>
                             <constraint firstAttribute="trailing" secondItem="fiM-qM-uel" secondAttribute="trailing" id="n9l-Y5-ctL"/>
                             <constraint firstItem="fiM-qM-uel" firstAttribute="top" secondItem="hdp-Xr-JFy" secondAttribute="top" id="ndz-P3-AQx"/>
                             <constraint firstAttribute="bottom" secondItem="fiM-qM-uel" secondAttribute="bottom" id="tP4-nx-stY"/>
