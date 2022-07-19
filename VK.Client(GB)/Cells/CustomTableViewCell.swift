@@ -95,13 +95,13 @@ class CustomTableViewCell: UITableViewCell {
         let scale = CGFloat(10)
         
         
-        UIView.animate(withDuration: 1) { [weak self] in
+        UIView.animate(withDuration: 0.5) { [weak self] in
             guard let self = self else {return}
                self.avatarView.frame = CGRect(x: self.avatarView.frame.origin.x + scale / 2, y: self.avatarView.frame.origin.y + scale / 2, width: self.avatarView.frame.width - scale, height: self.avatarView.frame.height - scale)
         } completion: { isSuccessfully in
-            UIView.animate(withDuration: 1,
+            UIView.animate(withDuration: 0.5,
                            delay: 0,
-                           usingSpringWithDamping: 0.7,
+                           usingSpringWithDamping: 0.5,
                            initialSpringVelocity: 0.3,
                            options: []) { [weak self] in
                 guard let self = self else {return}

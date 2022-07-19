@@ -34,8 +34,7 @@ extension FriendViewController: UITableViewDataSource {
         
         cell.configure(friend: miniArrayWord(source: friendsArray, word: arrayWord(source: friendsArray)[indexPath.section])[indexPath.row], completion: { [weak self] myFriend in
             guard let self = self else {return}
-            self.performSegue(withIdentifier: self.fromFriendsToGallery, sender: myFriend)
-        })
+            self.performSegue(withIdentifier: self.fromFriendsToGallery, sender: myFriend)})
         
         return cell
     }

@@ -63,15 +63,22 @@ import UIKit
                 button.setImage(UIImage(systemName: "heart"), for: .normal)
                 count -= 1
                 likeCountLabel.text = String(count)
+                UIView.transition(with: likeCountLabel, duration: 0.30,
+                                  options: .transitionFlipFromTop,
+                                  animations: { self.likeCountLabel.text = String(self.count) })
                
-            }
-            else {
+                }else {
                 button.setImage(UIImage(systemName: "heart.fill"), for: .normal)
                 count += 1
                 likeCountLabel.text = String(count)
+                UIView.transition(with: likeCountLabel, duration: 0.30,
+                                      options: .transitionFlipFromBottom,
+                                  animations: { self.likeCountLabel.text = String(self.count) })
                 
             }
             likeState = !likeState
+           
+        
         }
         
         
